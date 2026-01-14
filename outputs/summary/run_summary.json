@@ -1,12 +1,12 @@
 {
   "estimated_reads_used": {
-    "estimated_used_reads_read1": 200000,
-    "estimated_used_reads_read2": 200000,
-    "estimated_used_reads_total": 400000,
-    "max_reads_param": 200000,
-    "note": "Subsampled to max_reads=200000 per FASTQ (estimated from qc totals)."
+    "estimated_used_reads_read1": 2000000,
+    "estimated_used_reads_read2": 2000000,
+    "estimated_used_reads_total": 4000000,
+    "max_reads_param": 2000000,
+    "note": "Subsampled to max_reads=2000000 per FASTQ (estimated from qc totals)."
   },
-  "generated_utc": "2026-01-14T09:52:01.852917Z",
+  "generated_utc": "2026-01-14T11:36:40.592859Z",
   "inputs": {
     "family_map_path": "refs/enzyme_family_map.tsv",
     "hits_path": "outputs/enzyme_hits/enzyme_hits.tsv",
@@ -21,14 +21,15 @@
   ],
   "plastic_enzyme_hits": {
     "hits_by_family": {
-      "AlkB": 115,
-      "Cutinase_like": 87,
-      "MHETase_like": 10
+      "AlkB": 1134,
+      "Cutinase_like": 839,
+      "MHETase_like": 81,
+      "PETase_like": 6
     },
-    "total_hit_rows": 212,
-    "unique_enzyme_families_hit": 3,
-    "unique_plastic_related_proteins_found": 102,
-    "unique_reads_with_hits": 162
+    "total_hit_rows": 2060,
+    "unique_enzyme_families_hit": 4,
+    "unique_plastic_related_proteins_found": 537,
+    "unique_reads_with_hits": 1530
   },
   "sequencing_totals_from_qc": {
     "read1_path": "SRR23872596_1.fastq",

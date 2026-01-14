@@ -1,5 +1,5 @@
 # Metadata summary
-- Retrieval date (UTC): 2026-01-14T08:21:52.411699Z
+- Retrieval date (UTC): 2026-01-14T11:34:24.349913Z
 - Source: NCBI SRA runinfo (SRR=SRR23872596)
 
 ## Key fields

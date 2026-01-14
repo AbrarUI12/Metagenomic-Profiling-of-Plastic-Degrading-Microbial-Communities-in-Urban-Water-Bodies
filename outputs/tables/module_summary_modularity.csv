@@ -1,0 +1,5 @@
+module_id,num_genera,total_hits,top_families
+0,179,1137,AlkB;Cutinase_like;MHETase_like
+1,82,853,Cutinase_like;AlkB;MHETase_like
+2,12,62,MHETase_like;AlkB
+3,4,8,PETase_like;AlkB;MHETase_like

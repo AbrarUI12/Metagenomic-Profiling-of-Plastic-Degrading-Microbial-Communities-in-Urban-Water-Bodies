@@ -48,6 +48,10 @@ def main():
     parser.add_argument("--clusters", default="outputs/tables/genus_clusters.csv")
     parser.add_argument("--params", default="outputs/run_params.json")
     parser.add_argument("--method-log", default="outputs/logs/search_method.txt")
+    parser.add_argument("--network-params", default="outputs/logs/network_modularity_params.json")
+    parser.add_argument("--module-summary", default="outputs/tables/module_summary_modularity.csv")
+    parser.add_argument("--modules", default="outputs/tables/genus_modules_modularity.csv")
+    parser.add_argument("--kmeans-vs-modules", default="outputs/tables/kmeans_vs_modules.csv")
     parser.add_argument("--render-pdf", action="store_true")
     parser.add_argument("--commands-log", default="outputs/logs/commands.log")
     args = parser.parse_args()
@@ -56,6 +60,13 @@ def main():
     qc = load_json(args.qc_json)
     params = load_json(args.params)
     method_log = Path(args.method_log).read_text(encoding="utf-8").strip() if Path(args.method_log).exists() else ""
+    network_params = load_json(args.network_params)
+    module_summary = None
+    if Path(args.module_summary).exists():
+        module_summary = pd.read_csv(args.module_summary)
+    modules_df = None
+    if Path(args.modules).exists():
+        modules_df = pd.read_csv(args.modules)
 
     raw = pd.read_csv(args.raw_matrix, index_col=0)
     cpm = pd.read_csv(args.cpm_matrix, index_col=0)
@@ -141,12 +152,72 @@ def main():
     for cid, count in cluster_counts.items():
         lines.append(f"- Cluster {cid}: {fmt_number(count)} genera\n")
 
+    if network_params and modules_df is not None:
+        lines.append("\n## Network-Based Modularity Analysis of Plastic-Degrading Potential\n")
+        lines.append(
+            "- Rationale: graph modularity can reveal putative functional modules (guilds) "
+            "based on co-occurrence of plastic-degrading genetic potential, complementing "
+            "distance-based clustering.\n"
+        )
+        lines.append(
+            "- Network construction: genus-genus similarity computed from CPM enzyme-family "
+            "profiles using {metric} with threshold {threshold}; edge weights retained and self-loops removed.\n".format(
+                metric=network_params.get("metric"),
+                threshold=network_params.get("threshold"),
+            )
+        )
+        lines.append(
+            "- Community detection: {algo} (graph modularity), seed {seed}.\n".format(
+                algo=network_params.get("algorithm_used"),
+                seed=network_params.get("seed"),
+            )
+        )
+        lines.append(
+            "- Modularity (Q): {q:.3f}; modules: {m}; nodes: {n}; edges: {e}.\n".format(
+                q=network_params.get("modularity_Q", 0.0),
+                m=network_params.get("num_modules", 0),
+                n=network_params.get("num_nodes", 0),
+                e=network_params.get("num_edges", 0),
+            )
+        )
+        if module_summary is not None and not module_summary.empty:
+            lines.append("- Major modules (by total hits):\n")
+            top_mods = module_summary.sort_values("total_hits", ascending=False).head(5)
+            for _, row in top_mods.iterrows():
+                lines.append(
+                    f"  - Module {int(row['module_id'])}: "
+                    f"{fmt_number(row['num_genera'])} genera, "
+                    f"{fmt_number(row['total_hits'])} total hits, "
+                    f"top families: {row['top_families']}\n"
+                )
+        if Path(args.kmeans_vs_modules).exists():
+            lines.append(
+                "- Comparison with k-means: overlap table saved to "
+                f"`{args.kmeans_vs_modules}`; alignment is partial and reflects complementary "
+                "views of functional organization.\n"
+            )
+            if network_params.get("adjusted_rand_index") is not None:
+                lines.append(
+                    "- Adjusted Rand Index (modules vs k-means): "
+                    f"{network_params.get('adjusted_rand_index'):.3f}\n"
+                )
+        lines.append(
+            "- Interpretation: modules represent putative functional communities structured "
+            "by shared plastic-degradation genetic potential (homology-based inference), not "
+            "confirmed interactions or activity.\n"
+        )
+
     lines.append("\n## Figures\n")
     lines.append("- `outputs/figures/top_genera_barplot.png`\n")
     lines.append("- `outputs/figures/genus_enzyme_heatmap.png`\n")
     lines.append("- `outputs/figures/pca_kmeans.png`\n")
     lines.append("- `outputs/figures/kmeans_elbow.png`\n")
     lines.append("- `outputs/figures/kmeans_silhouette.png`\n")
+    if network_params:
+        lines.append("- `outputs/figures/network/genus_network_modules.png`\n")
+        lines.append("- `outputs/figures/network/genus_enzyme_heatmap_by_module.png`\n")
+        lines.append("- `outputs/figures/network/kmeans_vs_modules_heatmap.png`\n")
+        lines.append("- `outputs/figures/network/module_barplots.png`\n")
 
     lines.append("\n## Limitations (thesis-safe)\n")
     lines.append(
@@ -163,6 +234,13 @@ def main():
     lines.append(
         "- Results describe genetic potential in bulk sediment metagenome and do not prove plastisphere association.\n"
     )
+    if network_params:
+        lines.append(
+            "- Correlation-based networks reflect co-occurrence of genetic potential, not ecological interaction.\n"
+        )
+        lines.append(
+            "- Network structure and modularity depend on similarity metric and threshold choices.\n"
+        )
 
     lines.append("\n## Reproducibility\n")
     lines.append("- Run end-to-end pipeline: `python run_pipeline.py`\n")
