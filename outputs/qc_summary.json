@@ -1,0 +1,28 @@
+{
+  "read1": {
+    "length_counts": {
+      "159": 13495134
+    },
+    "max_len": 159,
+    "mean_len": 159.0,
+    "min_len": 159,
+    "path": "SRR23872596_1.fastq",
+    "qc_length_mismatch_reads": 0,
+    "qc_sample_reads": 10000,
+    "total_bases": 2145726306,
+    "total_reads": 13495134
+  },
+  "read2": {
+    "length_counts": {
+      "159": 13495134
+    },
+    "max_len": 159,
+    "mean_len": 159.0,
+    "min_len": 159,
+    "path": "SRR23872596_2.fastq",
+    "qc_length_mismatch_reads": 0,
+    "qc_sample_reads": 10000,
+    "total_bases": 2145726306,
+    "total_reads": 13495134
+  }
+}

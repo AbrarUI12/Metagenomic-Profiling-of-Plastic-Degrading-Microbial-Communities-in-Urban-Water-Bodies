@@ -1,0 +1,213 @@
+read_id	protein_id	family	evalue	bitscore	pident	aln_len	taxid	genus	species	source_db
+SRR23872596.399	A0AAP8QDB7	AlkB	5.98e-16	68.2	54.7	53		Brevibacillus	Brevibacillus laterosporus (Bacillus laterosporus)	UniProt
+SRR23872596.1450	G1C7H9	AlkB	3.21e-19	77.4	72.5	51		Alcanivorax	Alcanivorax hongdengensis	UniProt
+SRR23872596.2284	A0ABW3HCW7	AlkB	1.27e-06	42.0	40.7	54		Paraperlucidibaca	Paraperlucidibaca wandonensis	UniProt
+SRR23872596.2332	A0A8H6D6M8	Cutinase_like	1.45e-13	61.6	51.9	52		Fusarium	Fusarium mundagurra	UniProt
+SRR23872596.3589	A0A8H6D6M8	Cutinase_like	1.45e-13	61.6	51.9	52		Fusarium	Fusarium mundagurra	UniProt
+SRR23872596.3692	A0A0A6UP58	AlkB	3.53e-24	90.5	82.7	52		Actinoplanes	Actinoplanes utahensis	UniProt
+SRR23872596.3979	A9CMS7	AlkB	2.36e-09	49.7	54.9	51		Gordonia	Gordonia sp. TF6	UniProt
+SRR23872596.5228	A0AAE6Y585	AlkB	2.0299999999999998e-23	88.6	67.9	53		Streptomyces	Streptomyces antibioticus	UniProt
+SRR23872596.5341	A0AAE6Y585	AlkB	2.0299999999999998e-23	88.6	67.9	53		Streptomyces	Streptomyces antibioticus	UniProt
+SRR23872596.5561	A0A164J077	AlkB	7.84e-11	53.9	62.7	51		Nocardia	Nocardia terpenica	UniProt
+SRR23872596.5893	A0AAE6Y585	AlkB	2.0299999999999998e-23	88.6	67.9	53		Streptomyces	Streptomyces antibioticus	UniProt
+SRR23872596.8308	A0A9Q8WKU3	Cutinase_like	1.63e-08	47.4	45.1	51		Colletotrichum	Colletotrichum lupini	UniProt
+SRR23872596.10952	A0A922NQS1	Cutinase_like	2.15e-08	47.0	48.0	50		Pyrenophora	Pyrenophora tritici-repentis	UniProt
+SRR23872596.11380	G1C7H9	AlkB	1.77e-19	78.2	71.7	53		Alcanivorax	Alcanivorax hongdengensis	UniProt
+SRR23872596.12733	A0ABQ5TAM8	AlkB	1.2e-25	94.4	88.5	52		Brevundimonas	Brevundimonas intermedia	UniProt
+SRR23872596.13476	A0AAN5C2R9	Cutinase_like	2.94e-08	46.6	44.0	50		Aspergillus	Aspergillus oryzae (Yellow koji mold)	UniProt
+SRR23872596.16381	A0A0P8X0D6	Cutinase_like	1.36e-13	61.6	55.8	52		Pseudomonas	Pseudomonas fluorescens	UniProt
+SRR23872596.16642	A0A922NQS1	Cutinase_like	3.29e-06	40.8	37.0	54		Pyrenophora	Pyrenophora tritici-repentis	UniProt
+SRR23872596.16873	A0ABX7ZNJ8	Cutinase_like	4.14e-14	63.2	48.0	50		Ralstonia	Ralstonia syzygii	UniProt
+SRR23872596.17973	A0AAN5C2R9	Cutinase_like	3.71e-13	60.5	54.9	51		Aspergillus	Aspergillus oryzae (Yellow koji mold)	UniProt
+SRR23872596.21166	A0A3N0VJU4	AlkB	1.5e-27	100.0	88.5	52		Stagnimonas	Stagnimonas aquatica	UniProt
+SRR23872596.21318	A0A0P9CMX4	AlkB	1.58e-17	72.8	59.6	52		Alicyclobacillus	Alicyclobacillus ferrooxydans	UniProt
+SRR23872596.23418	A0ABW3HCW7	AlkB	1.01e-18	76.3	65.4	52		Paraperlucidibaca	Paraperlucidibaca wandonensis	UniProt
+SRR23872596.29798	A0ABX3ST51	AlkB	4.92e-13	60.1	50.0	52		Mycobacterium	Mycobacterium malmoense	UniProt
+SRR23872596.31874	A0A097IIG9	AlkB	9.57e-07	42.4	42.3	52		Corynebacterium	Corynebacterium doosanense CAU 212 = DSM 45436	UniProt
+SRR23872596.33991	A0A679JQL4	MHETase_like	4.14e-14	63.2	53.8	52		Variovorax	Variovorax paradoxus	UniProt
+SRR23872596.34899	A0ABY6XS25	AlkB	1.9e-07	44.3	45.3	53		Burkholderia	Burkholderia aenigmatica	UniProt
+SRR23872596.38718	A0A4Q7VA27	AlkB	1.6e-26	96.7	79.2	53		Rivibacter	Rivibacter subsaxonicus	UniProt
+SRR23872596.47889	A0A1B0Z6J3	AlkB	1.45e-31	105.0	86.5	52		bacterium	bacterium enrichment culture	UniProt
+SRR23872596.49758	A0A7I7Y2A8	AlkB	4.4e-12	57.4	55.8	52		Mycolicibacterium	Mycolicibacterium confluentis	UniProt
+SRR23872596.52332	A0ABQ6BST8	AlkB	1.25e-09	50.4	45.1	51		Chitiniphilus	Chitiniphilus shinanonensis	UniProt
+SRR23872596.53512	G1C7H9	AlkB	4.15e-28	101.0	92.2	51		Alcanivorax	Alcanivorax hongdengensis	UniProt
+SRR23872596.53672	W4LRX4	AlkB	5.39e-33	114.0	86.8	53		Entotheonella	Entotheonella factor	UniProt
+SRR23872596.57548	A0AAN5C2R9	Cutinase_like	2.22e-14	63.9	56.9	51		Aspergillus	Aspergillus oryzae (Yellow koji mold)	UniProt
+SRR23872596.59693	A0A937UNF1	Cutinase_like	7.3e-11	53.9	50.0	50		Frankia	Frankia nepalensis	UniProt
+SRR23872596.61418	A0A937UNF1	Cutinase_like	7.3e-11	53.9	50.0	50		Frankia	Frankia nepalensis	UniProt
+SRR23872596.62413	D3B1Q5	Cutinase_like	1.07e-08	47.8	48.1	52		Heterostelium	Heterostelium pallidum (strain ATCC 26659 / Pp 5 / PN500) (Cellular slime mold) (Polysphondylium pallidum)	UniProt
+SRR23872596.64894	G1C7H9	AlkB	1.0899999999999999e-23	89.7	79.2	53		Alcanivorax	Alcanivorax hongdengensis	UniProt
+SRR23872596.66172	A9CMS7	AlkB	5.67e-20	79.7	70.0	50		Gordonia	Gordonia sp. TF6	UniProt
+SRR23872596.68752	A0A937UNF1	Cutinase_like	7.3e-11	53.9	50.0	50		Frankia	Frankia nepalensis	UniProt
+SRR23872596.74169	A0A8H5WTA5	Cutinase_like	1.3e-12	58.9	62.7	51		Fusarium	Fusarium denticulatum	UniProt
+SRR23872596.74658	A0A031JBB2	AlkB	2.9e-08	46.6	40.4	52		Novosphingobium	Novosphingobium resinovorum	UniProt
+SRR23872596.74909	A0A9P5AHW0	Cutinase_like	1.33e-09	50.4	46.0	50		Fusarium	Fusarium beomiforme	UniProt
+SRR23872596.76064	A0AAN5C2R9	Cutinase_like	5.68e-14	62.8	50.0	52		Aspergillus	Aspergillus oryzae (Yellow koji mold)	UniProt
+SRR23872596.76762	A0ABQ1JGM9	AlkB	2.6200000000000003e-21	82.8	71.7	53		Henriciella	Henriciella pelagia	UniProt
+SRR23872596.77932	A0A4Q7Z5L0	AlkB	1.32e-24	92.4	86.5	52		Fluviicoccus	Fluviicoccus keumensis	UniProt
+SRR23872596.78270	G1C7H9	AlkB	7.54e-17	70.9	64.7	51		Alcanivorax	Alcanivorax hongdengensis	UniProt
+SRR23872596.79034	A0AAN5C2R9	Cutinase_like	1.5e-16	70.1	67.3	52		Aspergillus	Aspergillus oryzae (Yellow koji mold)	UniProt
+SRR23872596.79614	A0A1T3WM18	AlkB	4.89e-13	60.1	48.1	52		Mycolicibacterium	Mycolicibacterium diernhoferi	UniProt
+SRR23872596.80818	A0A922NQS1	Cutinase_like	7.12e-07	42.7	37.7	53		Pyrenophora	Pyrenophora tritici-repentis	UniProt
+SRR23872596.81288	A0A1E7N1S6	AlkB	1.39e-07	44.7	38.5	52		Kitasatospora	Kitasatospora aureofaciens (Streptomyces aureofaciens)	UniProt
+SRR23872596.82061	F8U1Q3	AlkB	5.04e-26	91.7	82.4	51		Arthrobacter	Arthrobacter sp. 7.19-VPa	UniProt
+SRR23872596.89831	A0ABW3HCW7	AlkB	1.27e-09	50.4	45.6	68		Paraperlucidibaca	Paraperlucidibaca wandonensis	UniProt
+SRR23872596.93252	A0A6J5F6R0	MHETase_like	4.14e-06	40.4	50.0	50		Paraburkholderia	Paraburkholderia solisilvae	UniProt
+SRR23872596.93642	G1C7R7	AlkB	1.15e-17	69.3	60.4	53		Alcanivorax	Alcanivorax hongdengensis	UniProt
+SRR23872596.94734	A0A316YF96	Cutinase_like	5.21e-16	68.6	64.0	50		Acaromyces	Acaromyces ingoldii	UniProt
+SRR23872596.95143	A9CMS7	AlkB	2.75e-16	69.3	63.5	52		Gordonia	Gordonia sp. TF6	UniProt
+SRR23872596.95711	A0AAN5C2R9	Cutinase_like	5.31e-13	60.1	52.8	53		Aspergillus	Aspergillus oryzae (Yellow koji mold)	UniProt
+SRR23872596.97629	A0A3Q8MC64	AlkB	6.77e-18	71.6	60.4	53		Rhodococcus	Rhodococcus opacus (Nocardia opaca)	UniProt
+SRR23872596.98953	A0ABW3HCW7	AlkB	1.92e-07	44.3	50.0	50		Paraperlucidibaca	Paraperlucidibaca wandonensis	UniProt
+SRR23872596.100107	Q5F4D8	AlkB	2.36e-06	41.2	41.2	51		Sphingopyxis	Sphingopyxis macrogoltabida (Sphingomonas macrogoltabidus)	UniProt
+SRR23872596.101523	Q5F4D8	AlkB	2.36e-06	41.2	41.2	51		Sphingopyxis	Sphingopyxis macrogoltabida (Sphingomonas macrogoltabidus)	UniProt
+SRR23872596.102994	A0A382CF23	Cutinase_like	5.66e-08	45.8	41.8	55		marine	marine metagenome	UniProt
+SRR23872596.103742	G1C7H9	AlkB	2.18e-18	75.1	72.5	51		Alcanivorax	Alcanivorax hongdengensis	UniProt
+SRR23872596.104095	A0AAE6Y585	AlkB	1.25e-06	42.0	41.2	51		Streptomyces	Streptomyces antibioticus	UniProt
+SRR23872596.104997	A0AAN5C2R9	Cutinase_like	4.66e-15	65.9	68.0	50		Aspergillus	Aspergillus oryzae (Yellow koji mold)	UniProt
+SRR23872596.107615	A0A922NQS1	Cutinase_like	3.63e-07	43.5	45.1	51		Pyrenophora	Pyrenophora tritici-repentis	UniProt
+SRR23872596.109560	A0A1X0BAF1	AlkB	1.8e-06	41.6	45.3	53		Mycobacterium	Mycobacterium aquaticum	UniProt
+SRR23872596.109608	A0A286RH75	Cutinase_like	1.92e-10	52.8	50.0	52		Thermogutta	Thermogutta terrifontis	UniProt
+SRR23872596.116545	A0A1E3LRC3	AlkB	1.06e-16	70.5	68.0	50		Sphingomonas	Sphingomonas turrisvirgatae	UniProt
+SRR23872596.119827	A0A1V2ICM1	AlkB	5.45e-11	54.3	50.9	53		Pseudofrankia	Pseudofrankia asymbiotica	UniProt
+SRR23872596.125228	B6Z2A7	AlkB	2.1500000000000002e-26	93.2	82.7	52		Alcanivorax	Alcanivorax sp. S8-5	UniProt
+SRR23872596.128461	A0A9P4TBT9	Cutinase_like	3.15e-17	72.0	65.4	52		Curvularia	Curvularia kusanoi (Cochliobolus kusanoi)	UniProt
+SRR23872596.132301	A0A382EE29	Cutinase_like	1.06e-13	62.0	56.9	51		marine	marine metagenome	UniProt
+SRR23872596.134326	A0A5N5E036	Cutinase_like	1.65e-11	55.8	55.6	54		Rhodococcus	Rhodococcus erythropolis (Arthrobacter picolinophilus)	UniProt
+SRR23872596.134751	A0A538SMW8	Cutinase_like	2.88e-17	70.5	62.3	53		Eiseniibacteriota	Eiseniibacteriota bacterium	UniProt
+SRR23872596.135788	A0ABR7MBV8	AlkB	4.14e-17	71.6	60.0	50		Flavihumibacter	Flavihumibacter stibioxidans	UniProt
+SRR23872596.136855	A0A922NQS1	Cutinase_like	1.04e-10	53.5	52.0	50		Pyrenophora	Pyrenophora tritici-repentis	UniProt
+SRR23872596.141521	A0A071MHG8	AlkB	5.85e-12	57.0	51.0	51		Burkholderia	Burkholderia cenocepacia	UniProt
+SRR23872596.150748	A0A5M8NZN6	MHETase_like	7.09e-16	68.2	62.0	50		Candidatus	Candidatus Ordinivivax streblomastigis	UniProt
+SRR23872596.150855	A0A0P9CMX4	AlkB	3.42e-12	57.8	52.9	51		Alicyclobacillus	Alicyclobacillus ferrooxydans	UniProt
+SRR23872596.151020	A0A1S9RVN2	Cutinase_like	7.599999999999999e-24	90.9	81.1	53		Penicillium	Penicillium brasilianum	UniProt
+SRR23872596.154749	A0A1Q9AR33	AlkB	1.39e-07	44.7	43.4	53		Xaviernesmea	Xaviernesmea oryzae	UniProt
+SRR23872596.155150	A0A556QNH3	Cutinase_like	9.47e-14	62.0	54.9	51		Rariglobus	Rariglobus hedericola	UniProt
+SRR23872596.156363	A0AAN5C2R9	Cutinase_like	4.5e-17	71.6	69.2	52		Aspergillus	Aspergillus oryzae (Yellow koji mold)	UniProt
+SRR23872596.156584	A0A1S9RVN2	Cutinase_like	5.87e-17	71.2	58.1	62		Penicillium	Penicillium brasilianum	UniProt
+SRR23872596.160359	C1AAJ2	Cutinase_like	9.01e-18	73.6	61.5	52		Gemmatimonas	Gemmatimonas aurantiaca (strain DSM 14586 / JCM 11422 / NBRC 100505 / T-27)	UniProt
+SRR23872596.160407	G1C7H9	AlkB	1.15e-18	75.9	67.3	52		Alcanivorax	Alcanivorax hongdengensis	UniProt
+SRR23872596.161082	C1AAJ2	Cutinase_like	9.01e-18	73.6	61.5	52		Gemmatimonas	Gemmatimonas aurantiaca (strain DSM 14586 / JCM 11422 / NBRC 100505 / T-27)	UniProt
+SRR23872596.161149	A0A1Y1SD44	AlkB	4.6900000000000004e-21	82.8	71.2	52		Oceanococcus	Oceanococcus atlanticus	UniProt
+SRR23872596.162744	A0A922NQS1	Cutinase_like	4.06e-11	54.7	54.0	50		Pyrenophora	Pyrenophora tritici-repentis	UniProt
+SRR23872596.164133	A0AAN5C2R9	Cutinase_like	1.66e-11	55.8	49.1	53		Aspergillus	Aspergillus oryzae (Yellow koji mold)	UniProt
+SRR23872596.164963	A0AAN5C2R9	Cutinase_like	3.83e-16	68.9	74.0	50		Aspergillus	Aspergillus oryzae (Yellow koji mold)	UniProt
+SRR23872596.166044	A0A1E1JTL6	Cutinase_like	4.21e-11	54.7	52.9	51		Rhynchosporium	Rhynchosporium graminicola	UniProt
+SRR23872596.166990	A0A0F9YAJ9	Cutinase_like	1.67e-14	64.3	60.4	53		marine	marine sediment metagenome	UniProt
+SRR23872596.169286	A0A1X0I552	AlkB	1.13e-08	47.8	40.4	52		Mycobacterium	Mycobacterium paraseoulense	UniProt
+SRR23872596.172017	A0AA37M568	AlkB	1.02e-16	68.2	62.7	51		Methylobacterium	Methylobacterium frigidaeris	UniProt
+SRR23872596.173428	A9CMS7	AlkB	7.35e-16	68.2	50.9	53		Gordonia	Gordonia sp. TF6	UniProt
+SRR23872596.174013	A0A841B6R1	Cutinase_like	3.23e-06	40.8	41.2	51		Amycolatopsis	Amycolatopsis umgeniensis	UniProt
+SRR23872596.175064	A0A9W9D218	Cutinase_like	4.01e-08	46.2	46.3	54		Gnomoniopsis	Gnomoniopsis smithogilvyi	UniProt
+SRR23872596.176232	A0A316YF96	Cutinase_like	1.47e-07	44.7	47.1	51		Acaromyces	Acaromyces ingoldii	UniProt
+SRR23872596.176368	A0A316YF96	Cutinase_like	1.47e-07	44.7	47.1	51		Acaromyces	Acaromyces ingoldii	UniProt
+SRR23872596.176633	K2RTV3	Cutinase_like	1.38e-15	67.4	56.6	53		Macrophomina	Macrophomina phaseolina (strain MS6) (Charcoal rot fungus)	UniProt
+SRR23872596.176945	A0A4R6RNS3	AlkB	1.34e-32	113.0	96.2	52		Aquabacterium	Aquabacterium commune	UniProt
+SRR23872596.179049	A0AAN5C2R9	Cutinase_like	1.99e-13	61.2	54.9	51		Aspergillus	Aspergillus oryzae (Yellow koji mold)	UniProt
+SRR23872596.180184	Q5F4D8	AlkB	3.98e-20	80.1	71.2	52		Sphingopyxis	Sphingopyxis macrogoltabida (Sphingomonas macrogoltabidus)	UniProt
+SRR23872596.180948	A0ABR7MBV8	AlkB	4.28e-14	63.2	50.9	53		Flavihumibacter	Flavihumibacter stibioxidans	UniProt
+SRR23872596.185051	A0A9P5AHW0	Cutinase_like	3.27e-09	49.3	55.8	52		Fusarium	Fusarium beomiforme	UniProt
+SRR23872596.187433	A0A0D1YDG7	Cutinase_like	1.19e-08	47.8	39.3	61		Verruconis	Verruconis gallopava	UniProt
+SRR23872596.193304	A0ABU3XZF2	AlkB	2.4600000000000003e-21	78.2	65.4	52		Metapseudomonas	Metapseudomonas otitidis	UniProt
+SRR23872596.195562	A0ABR5J5T3	AlkB	3.22e-06	40.8	44.0	50		Streptomyces	Streptomyces varsoviensis	UniProt
+SRR23872596.196613	A0AAN5C2R9	Cutinase_like	2.94e-08	46.6	46.2	52		Aspergillus	Aspergillus oryzae (Yellow koji mold)	UniProt
+SRR23872596.1450	G1C7H9	AlkB	6.09e-19	76.6	72.5	51		Alcanivorax	Alcanivorax hongdengensis	UniProt
+SRR23872596.2698	A0A8H5WTA5	Cutinase_like	1.58e-11	55.8	52.9	51		Fusarium	Fusarium denticulatum	UniProt
+SRR23872596.3692	A0A0A6UP58	AlkB	9.609999999999999e-23	86.7	82.0	50		Actinoplanes	Actinoplanes utahensis	UniProt
+SRR23872596.5228	A0AAE6Y585	AlkB	3.13e-16	68.9	60.0	50		Streptomyces	Streptomyces antibioticus	UniProt
+SRR23872596.5341	A0AAE6Y585	AlkB	3.13e-16	68.9	60.0	50		Streptomyces	Streptomyces antibioticus	UniProt
+SRR23872596.5893	A0AAE6Y585	AlkB	3.13e-16	68.9	60.0	50		Streptomyces	Streptomyces antibioticus	UniProt
+SRR23872596.10967	A0A1X0I552	AlkB	4.42e-12	57.4	56.0	50		Mycobacterium	Mycobacterium paraseoulense	UniProt
+SRR23872596.11380	G1C7H9	AlkB	8.75e-19	76.3	71.2	52		Alcanivorax	Alcanivorax hongdengensis	UniProt
+SRR23872596.12733	A0ABQ3GCS7	AlkB	1.7099999999999998e-23	88.6	84.3	51		Pseudorhodoferax	Pseudorhodoferax aquiterrae	UniProt
+SRR23872596.16428	A0A418YP29	AlkB	1.72e-12	58.5	56.0	50		Sphingobium	Sphingobium terrigena	UniProt
+SRR23872596.16642	A0A922NQS1	Cutinase_like	2.65e-07	43.9	35.3	51		Pyrenophora	Pyrenophora tritici-repentis	UniProt
+SRR23872596.17678	A0A918KHB5	Cutinase_like	1.01e-07	45.1	45.6	57		Streptomyces	Streptomyces fructofermentans	UniProt
+SRR23872596.18558	A0A9P5AHW0	Cutinase_like	1.94e-07	44.3	37.3	51		Fusarium	Fusarium beomiforme	UniProt
+SRR23872596.19047	A0AA37M8P3	MHETase_like	6.08e-09	48.5	44.6	56		Methylobacterium	Methylobacterium frigidaeris	UniProt
+SRR23872596.21166	A0A3N0VJU4	AlkB	2.71e-31	110.0	96.2	52		Stagnimonas	Stagnimonas aquatica	UniProt
+SRR23872596.21318	A0A164J077	AlkB	2.93e-11	55.1	49.1	53		Nocardia	Nocardia terpenica	UniProt
+SRR23872596.22758	A0A0P7Y412	AlkB	1.7000000000000003e-28	99.4	75.5	53		Saliniramus	Saliniramus fredricksonii	UniProt
+SRR23872596.23364	A0A0P9CMX4	AlkB	3.32e-15	66.2	62.0	50		Alicyclobacillus	Alicyclobacillus ferrooxydans	UniProt
+SRR23872596.23418	A0ABW3HCW7	AlkB	1.06e-13	62.0	50.0	52		Paraperlucidibaca	Paraperlucidibaca wandonensis	UniProt
+SRR23872596.23434	A0A0P9CMX4	AlkB	3.32e-15	66.2	62.0	50		Alicyclobacillus	Alicyclobacillus ferrooxydans	UniProt
+SRR23872596.26745	H1VJR2	Cutinase_like	9.2e-07	42.4	40.0	50		Colletotrichum	Colletotrichum higginsianum (strain IMI 349063) (Crucifer anthracnose fungus)	UniProt
+SRR23872596.29798	A0A1X0I552	AlkB	3.29e-22	85.5	69.2	52		Mycobacterium	Mycobacterium paraseoulense	UniProt
+SRR23872596.31723	A0A096A6W6	AlkB	1.9e-07	44.3	47.3	55		Corynebacterium	Corynebacterium freneyi DNF00450	UniProt
+SRR23872596.31757	A0A096A6W6	AlkB	1.9e-07	44.3	47.3	55		Corynebacterium	Corynebacterium freneyi DNF00450	UniProt
+SRR23872596.33991	A0A679JQL4	MHETase_like	7.44e-16	68.2	60.4	53		Variovorax	Variovorax paradoxus	UniProt
+SRR23872596.38718	A0A844AVT7	AlkB	4.740000000000001e-27	98.2	77.4	53		Caenimonas	Caenimonas koreensis DSM 17982	UniProt
+SRR23872596.47334	Q9AP11	AlkB	2.13e-08	47.0	41.2	51		Bacillus	Bacillus sp. NTT89	UniProt
+SRR23872596.47889	C7EB02	AlkB	6.03e-29	98.6	84.9	53		uncultured	uncultured prokaryote	UniProt
+SRR23872596.52332	A0ABQ2EJG7	AlkB	3.19e-09	49.3	46.2	52		Luteimonas	Luteimonas terricola	UniProt
+SRR23872596.53512	G1C7H9	AlkB	8.91e-20	79.0	72.0	50		Alcanivorax	Alcanivorax hongdengensis	UniProt
+SRR23872596.53672	A0ABM7Y2T5	AlkB	3.1100000000000003e-31	109.0	90.6	53		Roseomonas	Roseomonas fluvialis	UniProt
+SRR23872596.54567	A0A316YF96	Cutinase_like	2.01e-07	44.3	46.3	54		Acaromyces	Acaromyces ingoldii	UniProt
+SRR23872596.59290	A0AAN5C2R9	Cutinase_like	2.71e-13	60.8	53.8	52		Aspergillus	Aspergillus oryzae (Yellow koji mold)	UniProt
+SRR23872596.61284	A0A679JIX2	MHETase_like	1.4e-07	44.7	44.2	52		Variovorax	Variovorax paradoxus	UniProt
+SRR23872596.69238	A9CMS7	AlkB	1.91e-07	44.3	36.0	50		Gordonia	Gordonia sp. TF6	UniProt
+SRR23872596.69932	A0A6A6HWM3	Cutinase_like	2.88e-08	46.6	44.2	52		Trematosphaeria	Trematosphaeria pertusa	UniProt
+SRR23872596.70772	A0A640VSU8	Cutinase_like	2.28e-14	63.9	53.8	52		Roseobacter	Roseobacter cerasinus	UniProt
+SRR23872596.73583	A0A0F2LV31	Cutinase_like	5.73e-08	45.8	45.3	53		Sporothrix	Sporothrix schenckii 1099-18	UniProt
+SRR23872596.74082	A0ABN7YA11	MHETase_like	4.04e-11	54.7	50.9	53		Cupriavidus	Cupriavidus laharis	UniProt
+SRR23872596.74169	A0A8H5WTA5	Cutinase_like	4.97e-10	51.6	55.8	52		Fusarium	Fusarium denticulatum	UniProt
+SRR23872596.74909	A0A9P5AHW0	Cutinase_like	2.94e-08	46.6	43.1	51		Fusarium	Fusarium beomiforme	UniProt
+SRR23872596.76762	A0ABQ1JGM9	AlkB	2.49e-20	80.1	68.6	51		Henriciella	Henriciella pelagia	UniProt
+SRR23872596.77932	A0A4Q7Z5L0	AlkB	1.45e-29	105.0	92.3	52		Fluviicoccus	Fluviicoccus keumensis	UniProt
+SRR23872596.78270	G1C7H9	AlkB	3.68e-16	68.9	64.2	53		Alcanivorax	Alcanivorax hongdengensis	UniProt
+SRR23872596.79034	A0AAN5C2R9	Cutinase_like	1.69e-17	72.8	70.6	51		Aspergillus	Aspergillus oryzae (Yellow koji mold)	UniProt
+SRR23872596.81238	A0A6J5F6R0	MHETase_like	6.64e-09	48.1	46.2	52		Paraburkholderia	Paraburkholderia solisilvae	UniProt
+SRR23872596.82061	F8U1Q3	AlkB	7.450000000000001e-26	91.3	82.4	51		Arthrobacter	Arthrobacter sp. 7.19-VPa	UniProt
+SRR23872596.84948	A0A1L7CPG1	AlkB	3.37e-06	40.8	39.2	51		Corynebacterium	Corynebacterium flavescens	UniProt
+SRR23872596.93252	A0A6J5F6R0	MHETase_like	4.14e-06	40.4	50.0	50		Paraburkholderia	Paraburkholderia solisilvae	UniProt
+SRR23872596.93642	G1C7R7	AlkB	6.18e-20	75.1	67.3	52		Alcanivorax	Alcanivorax hongdengensis	UniProt
+SRR23872596.95143	A9CMS7	AlkB	1.07e-16	70.5	66.7	51		Gordonia	Gordonia sp. TF6	UniProt
+SRR23872596.95711	A0AAN5C2R9	Cutinase_like	1.11e-13	62.0	56.9	51		Aspergillus	Aspergillus oryzae (Yellow koji mold)	UniProt
+SRR23872596.97629	A0A3Q8MC64	AlkB	1.3e-12	57.8	58.8	51		Rhodococcus	Rhodococcus opacus (Nocardia opaca)	UniProt
+SRR23872596.98181	A0A922NQS1	Cutinase_like	5.76e-08	45.8	42.6	54		Pyrenophora	Pyrenophora tritici-repentis	UniProt
+SRR23872596.98341	A0A8H5N5T4	Cutinase_like	1.75e-06	41.6	38.5	52		Fusarium	Fusarium mexicanum	UniProt
+SRR23872596.99536	A0A0K1RAR4	AlkB	2.61e-07	43.9	48.0	50		Corynebacterium	Corynebacterium riegelii	UniProt
+SRR23872596.102994	A0A382CF23	Cutinase_like	2.72e-07	43.9	41.7	60		marine	marine metagenome	UniProt
+SRR23872596.103742	G1C7H9	AlkB	2.33e-19	77.8	61.5	52		Alcanivorax	Alcanivorax hongdengensis	UniProt
+SRR23872596.107615	A0A922NQS1	Cutinase_like	5.2e-07	43.1	40.0	55		Pyrenophora	Pyrenophora tritici-repentis	UniProt
+SRR23872596.107707	A0A9W6N1A9	AlkB	1.56e-19	78.2	74.0	50		Ancylobacter	Ancylobacter dichloromethanicus	UniProt
+SRR23872596.112136	A0A538SMW8	Cutinase_like	1.79e-10	52.4	55.8	52		Eiseniibacteriota	Eiseniibacteriota bacterium	UniProt
+SRR23872596.114376	A0ABX3PCV7	AlkB	1.64e-17	72.4	73.1	52		Xaviernesmea	Xaviernesmea rhizosphaerae	UniProt
+SRR23872596.123479	A0A0L8C1U2	AlkB	1.86e-23	88.6	78.8	52		Ensifer	Ensifer adhaerens (Sinorhizobium morelense)	UniProt
+SRR23872596.125178	G1C7H9	AlkB	1.0899999999999999e-23	89.7	79.2	53		Alcanivorax	Alcanivorax hongdengensis	UniProt
+SRR23872596.125228	H2DK38	AlkB	1.73e-24	88.2	78.8	52		Agrobacterium	Agrobacterium sp. MS189b	UniProt
+SRR23872596.132255	A0A0N0U9H2	AlkB	2.7e-07	43.9	41.2	51		Haloarcula	Haloarcula rubripromontorii	UniProt
+SRR23872596.132301	A0A382EE29	Cutinase_like	1.44e-13	61.6	53.8	52		marine	marine metagenome	UniProt
+SRR23872596.134751	A0A538SMW8	Cutinase_like	9.32e-19	74.3	64.7	51		Eiseniibacteriota	Eiseniibacteriota bacterium	UniProt
+SRR23872596.141198	A0A0D1YDG7	Cutinase_like	8.43e-12	56.6	50.0	52		Verruconis	Verruconis gallopava	UniProt
+SRR23872596.143276	A0AAN5C2R9	Cutinase_like	1.7e-14	64.3	58.5	53		Aspergillus	Aspergillus oryzae (Yellow koji mold)	UniProt
+SRR23872596.150748	A0A5M8NZN6	MHETase_like	2.78e-16	69.3	61.5	52		Candidatus	Candidatus Ordinivivax streblomastigis	UniProt
+SRR23872596.151020	A0A1S9RVN2	Cutinase_like	1.94e-23	89.7	80.8	52		Penicillium	Penicillium brasilianum	UniProt
+SRR23872596.156584	A0A1S9RVN2	Cutinase_like	1.0399999999999998e-23	90.5	81.1	53		Penicillium	Penicillium brasilianum	UniProt
+SRR23872596.160534	D3B1Q5	Cutinase_like	1.58e-09	50.1	51.9	54		Heterostelium	Heterostelium pallidum (strain ATCC 26659 / Pp 5 / PN500) (Cellular slime mold) (Polysphondylium pallidum)	UniProt
+SRR23872596.160780	A0A316YF96	Cutinase_like	9.66e-07	42.4	44.2	52		Acaromyces	Acaromyces ingoldii	UniProt
+SRR23872596.161082	C1AAJ2	Cutinase_like	1.19e-14	64.7	57.7	52		Gemmatimonas	Gemmatimonas aurantiaca (strain DSM 14586 / JCM 11422 / NBRC 100505 / T-27)	UniProt
+SRR23872596.161149	A0A4P7XJ98	AlkB	9.1e-21	82.0	63.5	52		Hydrocarboniclastica	Hydrocarboniclastica marina	UniProt
+SRR23872596.163839	A0ABR5J5T3	AlkB	7.41e-08	45.4	44.0	50		Streptomyces	Streptomyces varsoviensis	UniProt
+SRR23872596.164963	A0AAN5C2R9	Cutinase_like	5.47e-16	68.6	74.0	50		Aspergillus	Aspergillus oryzae (Yellow koji mold)	UniProt
+SRR23872596.165470	A9CMS7	AlkB	1.6699999999999999e-25	95.1	84.6	52		Gordonia	Gordonia sp. TF6	UniProt
+SRR23872596.166990	A0AA88C5H9	Cutinase_like	7.38e-16	68.2	64.2	53		Pseudoduganella	Pseudoduganella albidiflava	UniProt
+SRR23872596.168983	A0A0W0SNN6	AlkB	1.42e-13	61.6	50.9	57		Legionella	Legionella brunensis	UniProt
+SRR23872596.173428	A9CMS7	AlkB	1.71e-17	72.8	52.8	53		Gordonia	Gordonia sp. TF6	UniProt
+SRR23872596.173738	A0A0P9CMX4	AlkB	2.4e-12	58.2	51.0	51		Alicyclobacillus	Alicyclobacillus ferrooxydans	UniProt
+SRR23872596.174411	A0A9P5AHW0	Cutinase_like	3.8e-10	52.0	38.5	52		Fusarium	Fusarium beomiforme	UniProt
+SRR23872596.174570	A0ABR7MBV8	AlkB	7.52e-11	53.9	52.0	50		Flavihumibacter	Flavihumibacter stibioxidans	UniProt
+SRR23872596.175064	A0A9W9D218	Cutinase_like	5.54e-11	54.3	50.0	50		Gnomoniopsis	Gnomoniopsis smithogilvyi	UniProt
+SRR23872596.176945	A0A9D7LR74	AlkB	3.2500000000000003e-31	110.0	96.1	51		Candidatus	Candidatus Dechloromonas phosphorivorans	UniProt
+SRR23872596.178672	A0ABT8FJW9	Cutinase_like	4.65e-09	48.9	44.2	52		Nocardioides	Nocardioides oceani	UniProt
+SRR23872596.180184	Q5F4D8	AlkB	1.36e-19	78.6	70.6	51		Sphingopyxis	Sphingopyxis macrogoltabida (Sphingomonas macrogoltabidus)	UniProt
+SRR23872596.180948	A0A0P9CMX4	AlkB	5.08e-19	77.0	72.5	51		Alicyclobacillus	Alicyclobacillus ferrooxydans	UniProt
+SRR23872596.184366	A0A1X1UCC7	AlkB	2.11e-08	47.0	45.1	51		Mycobacterium	Mycobacterium florentinum	UniProt
+SRR23872596.185863	A0ABQ6BST8	AlkB	1.16e-16	70.1	68.0	50		Chitiniphilus	Chitiniphilus shinanonensis	UniProt
+SRR23872596.187433	A0A0D1YDG7	Cutinase_like	1.19e-08	47.8	39.3	61		Verruconis	Verruconis gallopava	UniProt
+SRR23872596.189464	A0ABT8EVN5	Cutinase_like	5.53e-11	54.3	50.0	50		Nocardioides	Nocardioides abyssi	UniProt
+SRR23872596.192540	G1C7H9	AlkB	6.36e-12	57.0	51.0	51		Alcanivorax	Alcanivorax hongdengensis	UniProt
+SRR23872596.193304	A0A840BN63	AlkB	1.19e-22	86.7	74.5	51		Niveibacterium	Niveibacterium umoris	UniProt
+SRR23872596.195362	A0A5N5E036	Cutinase_like	8.41e-06	39.7	38.0	50		Rhodococcus	Rhodococcus erythropolis (Arthrobacter picolinophilus)	UniProt
+SRR23872596.196561	A0A922NQS1	Cutinase_like	4.5e-06	40.4	36.5	52		Pyrenophora	Pyrenophora tritici-repentis	UniProt
+SRR23872596.198119	G1C7H9	AlkB	1.3600000000000001e-21	84.0	78.0	50		Alcanivorax	Alcanivorax hongdengensis	UniProt

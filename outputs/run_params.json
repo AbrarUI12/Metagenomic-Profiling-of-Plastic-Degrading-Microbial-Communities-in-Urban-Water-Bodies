@@ -1,0 +1,14 @@
+{
+  "evalue": 1e-05,
+  "fastq1": "SRR23872596_1.fastq",
+  "fastq2": "SRR23872596_2.fastq",
+  "k": 0,
+  "k_max": 8,
+  "k_min": 2,
+  "max_reads": 200000,
+  "min_aln_len": 50,
+  "pident": 30.0,
+  "skip_conda_install": true,
+  "srr": "SRR23872596",
+  "threads": 4
+}
