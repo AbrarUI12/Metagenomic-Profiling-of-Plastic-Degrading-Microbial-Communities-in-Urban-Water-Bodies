@@ -1,0 +1,256 @@
+Entry	Entry Name	Protein names	Organism	Organism (ID)
+A0A0K8P6T7	PETH_PISS1	Poly(ethylene terephthalate) hydrolase (PET hydrolase) (PETase) (EC 3.1.1.101) (PET-digesting enzyme)	Piscinibacter sakaiensis (Ideonella sakaiensis)	1547922
+E9LVH9	PETH2_THECS	Cutinase 2 (EC 3.1.1.74) (Poly(ethylene terephthalate) hydrolase) (PET hydrolase) (PETase) (EC 3.1.1.101)	Thermobifida cellulosilytica	144786
+F7IX06	PETH2_THEAE	Cutinase est2 (EC 3.1.1.74) (Poly(ethylene terephthalate) hydrolase) (PET hydrolase) (PETase) (EC 3.1.1.101) (TaCut2)	Thermobifida alba (Thermomonospora alba)	53522
+G8GER6	PETH1_THEFU	Cutinase cut1 (EC 3.1.1.74) (Poly(ethylene terephthalate) hydrolase) (PET hydrolase) (PETase) (EC 3.1.1.101)	Thermobifida fusca (Thermomonospora fusca)	2021
+G9BY57	PETH_UNKP	Leaf-branch compost cutinase (LC-cutinase) (LCC) (EC 3.1.1.74) (PET-digesting enzyme) (Poly(ethylene terephthalate) hydrolase) (PET hydrolase) (PETase) (EC 3.1.1.101)	Unknown prokaryotic organism	2725
+Q47RJ6	PETH2_THEFY	Cutinase (EC 3.1.1.74) (Poly(ethylene terephthalate) hydrolase) (PET hydrolase) (PETase) (EC 3.1.1.101)	Thermobifida fusca (strain YX)	269800
+Q6A0I4	PETH2_THEFU	Cutinase cut2 (TfCut2) (EC 3.1.1.74) (Acetylxylan esterase) (BTA-hydrolase 1) (Poly(ethylene terephthalate) hydrolase) (PET hydrolase) (PETase) (EC 3.1.1.101)	Thermobifida fusca (Thermomonospora fusca)	2021
+D4Q9N1	PETH1_THEAE	Cutinase est1 (EC 3.1.1.74) (Poly(ethylene terephthalate) hydrolase) (PET hydrolase) (PETase) (EC 3.1.1.101)	Thermobifida alba (Thermomonospora alba)	53522
+E9LVH8	PETH1_THECS	Cutinase 1 (EC 3.1.1.74) (Poly(ethylene terephthalate) hydrolase) (PET hydrolase) (PETase) (EC 3.1.1.101)	Thermobifida cellulosilytica	144786
+Q47RJ7	PETH1_THEFY	Cutinase (EC 3.1.1.74) (Poly(ethylene terephthalate) hydrolase) (PET hydrolase) (PETase) (EC 3.1.1.101)	Thermobifida fusca (strain YX)	269800
+A0A1N6XE42	A0A1N6XE42_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Microbispora rosea	58117
+A0A2P4UDA7	A0A2P4UDA7_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura rubteroloni	1926885
+A0A2P4UDC3	A0A2P4UDC3_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura rubteroloni	1926885
+A0A365HAJ8	A0A365HAJ8_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura craniellae	2231787
+A0A4V0ZKB9	A0A4V0ZKB9_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Streptomonospora litoralis	2498135
+A0A543NNU7	A0A543NNU7_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Haloactinospora alba	405555
+A0A5J5K4W0	A0A5J5K4W0_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Microbispora cellulosiformans	2614688
+A0A5N6AZJ9	A0A5N6AZJ9_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Microbispora catharanthi	1712871
+A0A5N6B8J9	A0A5N6B8J9_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Microbispora catharanthi	1712871
+A0A7K1L1I6	A0A7K1L1I6_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura litoris	2678616
+A0A7W7RJC2	A0A7W7RJC2_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Lipingzhangella halophila	1783352
+A0A7X0IJV2	A0A7X0IJV2_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Sphaerisporangium rubeum	321317
+A0A841IUE8	A0A841IUE8_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Nocardiopsis algeriensis	1478215
+A0A8H9GXL4	A0A8H9GXL4_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Microbispora bryophytorum	1460882
+A0A917R069	A0A917R069_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Sphaerisporangium melleum	321316
+A0A919R7S7	A0A919R7S7_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Sphaerisporangium rufum	1381558
+A0A940WR16	A0A940WR16_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Microbispora oryzae	2806554
+A0A941ALA2	A0A941ALA2_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Microbispora oryzae	2806554
+A0A0C2G8Q0	A0A0C2G8Q0_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Streptomonospora alba	183763
+A0A147KJY8	A0A147KJY8_THECS	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Thermobifida cellulosilytica TB100	665004
+A0A161LKE9	A0A161LKE9_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Planomonospora sphaerica	161355
+A0A1G7Z2H0	A0A1G7Z2H0_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Nonomuraea jiangxiensis	633440
+A0A1G8SHF7	A0A1G8SHF7_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Nonomuraea maritima	683260
+A0A1H5T4B9	A0A1H5T4B9_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Thermomonospora echinospora	1992
+A0A1H5UML9	A0A1H5UML9_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Nonomuraea solani	1144553
+A0A1H6AWM6	A0A1H6AWM6_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Thermomonospora echinospora	1992
+A0A1H6C9P0	A0A1H6C9P0_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Thermomonospora echinospora	1992
+A0A1H6CN89	A0A1H6CN89_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Thermomonospora echinospora	1992
+A0A1H6EII4	A0A1H6EII4_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Nonomuraea solani	1144553
+A0A1H6EZ24	A0A1H6EZ24_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Nonomuraea solani	1144553
+A0A1H7U3G5	A0A1H7U3G5_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Nonomuraea pusilla	46177
+A0A1H8CDJ8	A0A1H8CDJ8_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Nonomuraea pusilla	46177
+A0A1H8CEP3	A0A1H8CEP3_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Nonomuraea pusilla	46177
+A0A1I0JU31	A0A1I0JU31_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Nonomuraea wenchangensis	568860
+A0A1I4AJK7	A0A1I4AJK7_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Streptosporangium canum	324952
+A0A1I4CKC4	A0A1I4CKC4_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Streptosporangium canum	324952
+A0A1I4D078	A0A1I4D078_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Streptosporangium canum	324952
+A0A1I5FBR0	A0A1I5FBR0_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura madurae	1993
+A0A1I5RT09	A0A1I5RT09_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura madurae	1993
+A0A1M4E4K7	A0A1M4E4K7_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Nonomuraea gerenzanensis	93944
+A0A1M6M213	A0A1M6M213_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Nocardiopsis flavescens	758803
+A0A1N6SMU6	A0A1N6SMU6_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Microbispora rosea	58117
+A0A1T4KK94	A0A1T4KK94_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Marinactinospora thermotolerans DSM 45154	1122192
+A0A1U9ZTE6	A0A1U9ZTE6_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	[Actinomadura] parvosata subsp. kistnae	1909395
+A0A1V0A5L2	A0A1V0A5L2_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	[Actinomadura] parvosata subsp. kistnae	1909395
+A0A1V3C6I0	A0A1V3C6I0_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Nocardiopsis sinuspersici	501010
+A0A238V211	A0A238V211_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura mexicana	134959
+A0A239AX86	A0A239AX86_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Streptosporangium subroseum	106412
+A0A239F412	A0A239F412_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Streptosporangium subroseum	106412
+A0A239F952	A0A239F952_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura meyerae	240840
+A0A239NYM8	A0A239NYM8_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura meyerae	240840
+A0A243RG01	A0A243RG01_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Streptosporangium minutum	569862
+A0A243RI45	A0A243RI45_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Streptosporangium minutum	569862
+A0A243RTG5	A0A243RTG5_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Streptosporangium minutum	569862
+A0A2C9ZMQ8	A0A2C9ZMQ8_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Streptosporangium minutum	569862
+A0A2P4UD72	A0A2P4UD72_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura rubteroloni	1926885
+A0A2P4UDP6	A0A2P4UDP6_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura rubteroloni	1926885
+A0A2P4UJS9	A0A2P4UJS9_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura rubteroloni	1926885
+A0A2P4UNN9	A0A2P4UNN9_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura rubteroloni	1926885
+A0A2P4UPT6	A0A2P4UPT6_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Actinomadura rubteroloni	1926885
+A0A2T0MSV4	A0A2T0MSV4_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Nonomuraea fuscirosea	1291556
+A0A2T0PXG2	A0A2T0PXG2_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Allonocardiopsis opalescens	1144618
+A0A2W2EN64	A0A2W2EN64_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Nonomuraea aridisoli	2070368
+A0A365GXM3	A0A365GXM3_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura craniellae	2231787
+A0A365H0G7	A0A365H0G7_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura craniellae	2231787
+A0A365H682	A0A365H682_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura craniellae	2231787
+A0A365H6K8	A0A365H6K8_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Actinomadura craniellae	2231787
+A0A365H6N6	A0A365H6N6_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Actinomadura craniellae	2231787
+A0A365H6Y8	A0A365H6Y8_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura craniellae	2231787
+A0A365H755	A0A365H755_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura craniellae	2231787
+A0A366LTE2	A0A366LTE2_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Spongiactinospora rosea	2248750
+A0A367F9K2	A0A367F9K2_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Sphaerisporangium album	509200
+A0A3A4B4E3	A0A3A4B4E3_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Bailinhaonella thermotolerans	1070861
+A0A3D9SN04	A0A3D9SN04_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Thermomonospora umbrina	111806
+A0A3D9SNA7	A0A3D9SNA7_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Thermomonospora umbrina	111806
+A0A3D9SP59	A0A3D9SP59_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Thermomonospora umbrina	111806
+A0A3D9SPQ3	A0A3D9SPQ3_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Thermomonospora umbrina	111806
+A0A3D9SRH8	A0A3D9SRH8_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Thermomonospora umbrina	111806
+A0A3D9SRX0	A0A3D9SRX0_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Thermomonospora umbrina	111806
+A0A3D9SUD5	A0A3D9SUD5_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Thermomonospora umbrina	111806
+A0A3D9SUJ1	A0A3D9SUJ1_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Thermomonospora umbrina	111806
+A0A3D9SVD4	A0A3D9SVD4_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Thermomonospora umbrina	111806
+A0A3N0E3M2	A0A3N0E3M2_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Halostreptopolyspora alba	2487137
+A0A3N0EHU6	A0A3N0EHU6_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Halostreptopolyspora alba	2487137
+A0A3N1CRP0	A0A3N1CRP0_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinocorallia herbida	58109
+A0A3N1D7Y0	A0A3N1D7Y0_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinocorallia herbida	58109
+A0A438MM65	A0A438MM65_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Nonomuraea polychroma	46176
+A0A4R4N608	A0A4R4N608_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura bangladeshensis	453573
+A0A4R4NB20	A0A4R4NB20_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura bangladeshensis	453573
+A0A4R4W6Q2	A0A4R4W6Q2_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Nonomuraea diastatica	1848329
+A0A4R4ZDD0	A0A4R4ZDD0_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Nonomuraea terrae	2530383
+A0A4R5ARP1	A0A4R5ARP1_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura darangshiensis	705336
+A0A4R5FXI3	A0A4R5FXI3_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Nonomuraea mesophila	2530382
+A0A4R6UW92	A0A4R6UW92_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinorugispora endophytica	1605990
+A0A4R6V0N6	A0A4R6V0N6_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Actinorugispora endophytica	1605990
+A0A4U3MI12	A0A4U3MI12_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Herbidospora galbida	2575442
+A0A4V2XJ75	A0A4V2XJ75_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Nonomuraea longispora	1848320
+A0A4V2YA86	A0A4V2YA86_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Nonomuraea deserti	1848322
+A0A4V2YB24	A0A4V2YB24_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Nonomuraea deserti	1848322
+A0A543CJP3	A0A543CJP3_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Actinoallomurus bryophytorum	1490222
+A0A543IKT7	A0A543IKT7_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura hallensis	337895
+A0A544Z467	A0A544Z467_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Microbispora hainanensis	568844
+A0A5C4J1R7	A0A5C4J1R7_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura soli	2508997
+A0A5C4VLV1	A0A5C4VLV1_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Nonomuraea phyllanthi	2219224
+A0A5C4WSK7	A0A5C4WSK7_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Nonomuraea phyllanthi	2219224
+A0A5J5K6L1	A0A5J5K6L1_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Microbispora cellulosiformans	2614688
+A0A5M3W626	A0A5M3W626_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Acrocarpospora corrugata	35763
+A0A5M3X7T2	A0A5M3X7T2_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Acrocarpospora macrocephala	150177
+A0A5M3XC53	A0A5M3XC53_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Acrocarpospora pleiomorpha	90975
+A0A5N6B6N8	A0A5N6B6N8_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Microbispora catharanthi	1712871
+A0A5S4FJI0	A0A5S4FJI0_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Nonomuraea zeae	1642303
+A0A5S4G823	A0A5S4G823_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Nonomuraea zeae	1642303
+A0A5S4GNH7	A0A5S4GNH7_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Nonomuraea zeae	1642303
+A0A5S4H3R9	A0A5S4H3R9_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura geliboluensis	882440
+A0A6H9YZG5	A0A6H9YZG5_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura rudentiformis	359158
+A0A6I4MG66	A0A6I4MG66_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Actinomadura physcomitrii	2650748
+A0A6I4VZW1	A0A6I4VZW1_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura rayongensis	1429076
+A0A6I4W489	A0A6I4W489_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura rayongensis	1429076
+A0A6I4W6E8	A0A6I4W6E8_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura rayongensis	1429076
+A0A6I4W9J4	A0A6I4W9J4_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura rayongensis	1429076
+A0A6I4WCS2	A0A6I4WCS2_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Actinomadura rayongensis	1429076
+A0A6I4WH26	A0A6I4WH26_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura rayongensis	1429076
+A0A6L3W3E9	A0A6L3W3E9_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Actinomadura montaniterrae	1803903
+A0A6L9QSN6	A0A6L9QSN6_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura bangladeshensis	453573
+A0A6L9QWC7	A0A6L9QWC7_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura bangladeshensis	453573
+A0A6L9QZF0	A0A6L9QZF0_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Actinomadura bangladeshensis	453573
+A0A6P2BTG6	A0A6P2BTG6_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Trebonia kvetii	2480626
+A0A7C9NKH2	A0A7C9NKH2_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Herbidospora solisilvae	2696284
+A0A7D3VX47	A0A7D3VX47_ACTVE	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura verrucosospora	46165
+A0A7D3W2P3	A0A7D3W2P3_ACTVE	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Actinomadura verrucosospora	46165
+A0A7K0BNG8	A0A7K0BNG8_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura macrotermitis	2585200
+A0A7K0BW34	A0A7K0BW34_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Actinomadura macrotermitis	2585200
+A0A7K0BW49	A0A7K0BW49_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Actinomadura macrotermitis	2585200
+A0A7K0BXG1	A0A7K0BXG1_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Actinomadura macrotermitis	2585200
+A0A7K0BY86	A0A7K0BY86_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Actinomadura macrotermitis	2585200
+A0A7K0BYW6	A0A7K0BYW6_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura macrotermitis	2585200
+A0A7K0C0L9	A0A7K0C0L9_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura macrotermitis	2585200
+A0A7W0CGN6	A0A7W0CGN6_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Nonomuraea soli	1032476
+A0A7W0CJQ8	A0A7W0CJQ8_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Nonomuraea soli	1032476
+A0A7W0CKZ2	A0A7W0CKZ2_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Nonomuraea soli	1032476
+A0A7W0HRK2	A0A7W0HRK2_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Nonomuraea soli	1032476
+A0A7W0HTY1	A0A7W0HTY1_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Nonomuraea soli	1032476
+A0A7W3LQR6	A0A7W3LQR6_ACTNM	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura namibiensis	182080
+A0A7W3LQW1	A0A7W3LQW1_ACTNM	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Actinomadura namibiensis	182080
+A0A7W3LR11	A0A7W3LR11_ACTNM	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Actinomadura namibiensis	182080
+A0A7W3LXJ4	A0A7W3LXJ4_ACTNM	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Actinomadura namibiensis	182080
+A0A7W3MTE8	A0A7W3MTE8_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Thermomonospora cellulosilytica	1411118
+A0A7W3MTQ6	A0A7W3MTQ6_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Thermomonospora cellulosilytica	1411118
+A0A7W3MYU4	A0A7W3MYU4_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Thermomonospora cellulosilytica	1411118
+A0A7W3N2I8	A0A7W3N2I8_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Thermomonospora cellulosilytica	1411118
+A0A7W3R6L2	A0A7W3R6L2_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Thermomonospora cellulosilytica	1411118
+A0A7W5VR51	A0A7W5VR51_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Nonomuraea dietziae	65515
+A0A7W7IIG7	A0A7W7IIG7_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura livida	79909
+A0A7W7QPZ7	A0A7W7QPZ7_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Streptosporangium saharense	1706840
+A0A7W7RIU6	A0A7W7RIU6_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Lipingzhangella halophila	1783352
+A0A7W7RNW4	A0A7W7RNW4_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Lipingzhangella halophila	1783352
+A0A7W7VS92	A0A7W7VS92_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Streptosporangium saharense	1706840
+A0A7W7W8Y9	A0A7W7W8Y9_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Streptosporangium album	47479
+A0A7W8AD49	A0A7W8AD49_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Nonomuraea endophytica	714136
+A0A7W8EHH8	A0A7W8EHH8_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Nonomuraea endophytica	714136
+A0A7W9GDV7	A0A7W9GDV7_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Nonomuraea jabiensis	882448
+A0A7W9GH83	A0A7W9GH83_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Nonomuraea jabiensis	882448
+A0A7W9IBT4	A0A7W9IBT4_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Streptosporangium becharense	1816182
+A0A7W9IC21	A0A7W9IC21_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Streptosporangium becharense	1816182
+A0A7W9IMV4	A0A7W9IMV4_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Streptosporangium becharense	1816182
+A0A7W9LAQ6	A0A7W9LAQ6_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Nonomuraea jabiensis	882448
+A0A7X0EVU5	A0A7X0EVU5_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Nonomuraea muscovyensis	1124761
+A0A7X0L0G3	A0A7X0L0G3_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura coerulea	46159
+A0A7X0U3W9	A0A7X0U3W9_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Nonomuraea rubra	46180
+A0A7X0U566	A0A7X0U566_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Nonomuraea rubra	46180
+A0A7X6RRV0	A0A7X6RRV0_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Nocardiopsis alborubida	146802
+A0A7Y6I7B0	A0A7Y6I7B0_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Nonomuraea montanisoli	2741721
+A0A7Y6MCQ0	A0A7Y6MCQ0_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Nonomuraea rhodomycinica	1712872
+A0A7Y6MET4	A0A7Y6MET4_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Nonomuraea rhodomycinica	1712872
+A0A7Y9EM44	A0A7Y9EM44_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura luteofluorescens	46163
+A0A7Y9GI10	A0A7Y9GI10_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura citrea	46158
+A0A7Y9KFU4	A0A7Y9KFU4_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura citrea	46158
+A0A7Y9XCA4	A0A7Y9XCA4_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Nocardiopsis sinuspersici	501010
+A0A7Z0ENR9	A0A7Z0ENR9_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Nocardiopsis aegyptia	220378
+A0A7Z0ET41	A0A7Z0ET41_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Nocardiopsis aegyptia	220378
+A0A7Z0JAZ5	A0A7Z0JAZ5_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Nocardiopsis aegyptia	220378
+A0A840NXT3	A0A840NXT3_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Thermocatellispora tengchongensis	1073253
+A0A840P2P8	A0A840P2P8_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Thermocatellispora tengchongensis	1073253
+A0A840WFK4	A0A840WFK4_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Nocardiopsis metallicus	179819
+A0A841DCU0	A0A841DCU0_PLAVE	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Planomonospora venezuelensis	1999
+A0A841ED77	A0A841ED77_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Streptomonospora salina	104205
+A0A846ZBK9	A0A846ZBK9_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura latina	163603
+A0A846ZDK3	A0A846ZDK3_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura latina	163603
+A0A852TYE9	A0A852TYE9_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Spinactinospora alkalitolerans	687207
+A0A852V791	A0A852V791_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Streptosporangium sandarakinum	1260955
+A0A853BQM0	A0A853BQM0_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Streptomonospora nanhaiensis	1323731
+A0A8H9GVK2	A0A8H9GVK2_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Microbispora bryophytorum	1460882
+A0A8H9LKD0	A0A8H9LKD0_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Microbispora bryophytorum	1460882
+A0A8J3PRQ9	A0A8J3PRQ9_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Planotetraspora kaengkrachanensis	575193
+A0A8J3RZU3	A0A8J3RZU3_PLARO	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Planobispora rosea	35762
+A0A8J3S661	A0A8J3S661_PLARO	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Planobispora rosea	35762
+A0A8J3T081	A0A8J3T081_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Planobispora takensis	1367882
+A0A8J3TJ48	A0A8J3TJ48_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Planotetraspora mira	58121
+A0A8J3U475	A0A8J3U475_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Planotetraspora phitsanulokensis	575192
+A0A8J3V6L7	A0A8J3V6L7_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Planotetraspora thailandica	487172
+A0A8J3W4U6	A0A8J3W4U6_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Planobispora longispora	28887
+A0A8J3W5P3	A0A8J3W5P3_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Planobispora longispora	28887
+A0A8J3WQI5	A0A8J3WQI5_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Planobispora siamensis	936338
+A0A8J3X7Y9	A0A8J3X7Y9_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Planotetraspora mira	58121
+A0A8J3XMP6	A0A8J3XMP6_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Planotetraspora silvatica	234614
+A0A917Z115	A0A917Z115_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Nonomuraea cavernae	2045107
+A0A918DIC6	A0A918DIC6_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Nonomuraea cavernae	2045107
+A0A918XC99	A0A918XC99_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Nocardiopsis kunsanensis	141693
+A0A919UR82	A0A919UR82_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Acrocarpospora phusangensis	1070424
+A0A931AKC4	A0A931AKC4_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Nonomuraea cypriaca	1187855
+A0A931F5V8	A0A931F5V8_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Nonomuraea cypriaca	1187855
+A0A931GV53	A0A931GV53_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura viridis	58110
+A0A939PI20	A0A939PI20_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Actinomadura barringtoniae	1427535
+A0A939PKG5	A0A939PKG5_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura barringtoniae	1427535
+A0A939TAR4	A0A939TAR4_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura barringtoniae	1427535
+A0A975LD17	A0A975LD17_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Nocardiopsis eucommiae	2831970
+A0A9P2TBN9	A0A9P2TBN9_THEFU	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Thermobifida fusca TM51	1169414
+A0A9P2WRG3	A0A9P2WRG3_THEFU	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Thermobifida fusca TM51	1169414
+A0A9W6UXL5	A0A9W6UXL5_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Actinomadura rubrobrunea	115335
+A0A9X2K0A4	A0A9X2K0A4_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Nonomuraea thailandensis	1188745
+A0A9X2K5K6	A0A9X2K5K6_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Nonomuraea thailandensis	1188745
+A0A9X2K9B4	A0A9X2K9B4_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Nonomuraea thailandensis	1188745
+A0A9X3NJC1	A0A9X3NJC1_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Streptomonospora mangrovi	2883123
+A0A9X7PFK9	A0A9X7PFK9_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Streptosporangium nondiastaticum	35764
+A0A9Y2YA38	A0A9Y2YA38_THECS	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Thermobifida cellulosilytica TB100	665004
+A0AA37BLQ4	A0AA37BLQ4_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Planomonospora parontospora	58119
+A0AA97LXT2	A0AA97LXT2_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Thermobifida halotolerans	483545
+A0AA97M4A3	A0AA97M4A3_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Thermobifida halotolerans	483545
+D1A2H1	D1A2H1_THECD	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Thermomonospora curvata (strain ATCC 19995 / DSM 43183 / JCM 3096 / KCTC 9072 / NBRC 15933 / NCIMB 10081 / Henssen B9)	471852
+D1A2K6	D1A2K6_THECD	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Thermomonospora curvata (strain ATCC 19995 / DSM 43183 / JCM 3096 / KCTC 9072 / NBRC 15933 / NCIMB 10081 / Henssen B9)	471852
+D1A646	D1A646_THECD	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Thermomonospora curvata (strain ATCC 19995 / DSM 43183 / JCM 3096 / KCTC 9072 / NBRC 15933 / NCIMB 10081 / Henssen B9)	471852
+D1A9G5	D1A9G5_THECD	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Thermomonospora curvata (strain ATCC 19995 / DSM 43183 / JCM 3096 / KCTC 9072 / NBRC 15933 / NCIMB 10081 / Henssen B9)	471852
+D2B3P3	D2B3P3_STRRD	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Streptosporangium roseum (strain ATCC 12428 / DSM 43021 / JCM 3005 / KCTC 9067 / NCIMB 10171 / NRRL 2505 / NI 9100)	479432
+D2B3R3	D2B3R3_STRRD	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Streptosporangium roseum (strain ATCC 12428 / DSM 43021 / JCM 3005 / KCTC 9067 / NCIMB 10171 / NRRL 2505 / NI 9100)	479432
+D2B6W3	D2B6W3_STRRD	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Streptosporangium roseum (strain ATCC 12428 / DSM 43021 / JCM 3005 / KCTC 9067 / NCIMB 10171 / NRRL 2505 / NI 9100)	479432
+D2BF75	D2BF75_STRRD	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Streptosporangium roseum (strain ATCC 12428 / DSM 43021 / JCM 3005 / KCTC 9067 / NCIMB 10171 / NRRL 2505 / NI 9100)	479432
+D2BFB4	D2BFB4_STRRD	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Streptosporangium roseum (strain ATCC 12428 / DSM 43021 / JCM 3005 / KCTC 9067 / NCIMB 10171 / NRRL 2505 / NI 9100)	479432
+D7AYZ5	D7AYZ5_NOCDD	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Nocardiopsis dassonvillei (strain ATCC 23218 / DSM 43111 / CIP 107115 / JCM 7437 / KCTC 9190 / NBRC 14626 / NCTC 10488 / NRRL B-5397 / IMRU 509) (Actinomadura dassonvillei)	446468
+E5BBQ2	E5BBQ2_THEFU	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Thermobifida fusca (Thermomonospora fusca)	2021
+E9LVH7	E9LVH7_THEAE	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Thermobifida alba (Thermomonospora alba)	53522
+H6WX58	H6WX58_9ACTN	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Thermobifida halotolerans	483545
+Q6A0I3	Q6A0I3_THEFU	Poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (EC 3.1.1.74)	Thermobifida fusca (Thermomonospora fusca)	2021
+A0A3D9SLY3	A0A3D9SLY3_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Thermomonospora umbrina	111806
+A0A7W7N125	A0A7W7N125_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Actinomadura livida	79909
+A0A8H9LH03	A0A8H9LH03_9ACTN	poly(ethylene terephthalate) hydrolase (EC 3.1.1.101) (Poly(ethylene terephthalate) hydrolase)	Microbispora bryophytorum	1460882

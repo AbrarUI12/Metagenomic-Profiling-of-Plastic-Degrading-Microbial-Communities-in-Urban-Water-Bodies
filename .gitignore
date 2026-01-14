@@ -1,0 +1,57 @@
+# ------------------------------
+# OS / Editor / IDE files
+# ------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+.idea/
+.vscode/
+*.code-workspace
+
+# Python bytecode / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+.Python
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+logs/
+*.log
+
+# Local tools / binaries
+tools/
+*.exe
+*.zip
+
+# Data & large raw inputs
+data/
+SRR*.fastq
+SRR23872596_1.fastq
+SRR23872596_2.fastq
+
+# Pipeline outputs (regenerable)
+outputs/
+reports/
+
+# Misc
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
