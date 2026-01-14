@@ -31,11 +31,19 @@ python run_pipeline.py --max-reads 200000
 - `outputs/tables/genus_enzyme_matrix_raw.csv`
 - `outputs/tables/genus_enzyme_matrix_cpm.csv`
 - `outputs/tables/genus_clusters.csv`
+- `outputs/tables/genus_modules_modularity.csv`
+- `outputs/tables/module_summary_modularity.csv`
+- `outputs/network/genus_similarity_edges.tsv`
+- `outputs/network/genus_similarity_nodes.tsv`
 - `outputs/figures/top_genera_barplot.png`
 - `outputs/figures/genus_enzyme_heatmap.png`
 - `outputs/figures/pca_kmeans.png`
 - `outputs/figures/kmeans_elbow.png`
 - `outputs/figures/kmeans_silhouette.png`
+- `outputs/figures/network/genus_network_modules.png`
+- `outputs/figures/network/genus_enzyme_heatmap_by_module.png`
+- `outputs/figures/network/kmeans_vs_modules_heatmap.png`
+- `outputs/figures/network/module_barplots.png`
 - `outputs/report.md`
 
 ## Methods overview
@@ -43,6 +51,7 @@ python run_pipeline.py --max-reads 200000
 - Homology search: translated search (DIAMOND blastx preferred) with strict thresholds.
 - Taxonomy: best-hit protein accession to genus (UniProt taxonomy).
 - Clustering: k-means on log1p CPM profiles; k chosen by silhouette.
+- Network modularity: genus similarity network (cosine by default) and Louvain community detection to infer putative functional modules.
 
 Default thresholds (configurable in `run_pipeline.py` arguments):
 - e-value <= 1e-5

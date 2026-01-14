@@ -45,7 +45,6 @@ SRR23872596_1.fastq
 SRR23872596_2.fastq
 
 # Pipeline outputs (regenerable)
-outputs/
 reports/
 
 # Misc

@@ -31,7 +31,7 @@ def log_versions(out_path):
             lines.append(f"{tool}_path\t{tool_path}\n")
     # Python package versions
     pkg_versions = {}
-    for pkg in ["pandas", "numpy", "matplotlib", "seaborn", "sklearn"]:
+    for pkg in ["pandas", "numpy", "matplotlib", "seaborn", "sklearn", "networkx"]:
         try:
             mod = __import__(pkg)
             ver = getattr(mod, "__version__", "unknown")
@@ -60,6 +60,14 @@ def main():
     parser.add_argument("--k", type=int, default=0)
     parser.add_argument("--render-pdf", action="store_true")
     parser.add_argument("--skip-conda-install", action="store_true")
+    parser.add_argument("--network-metric", default="cosine")
+    parser.add_argument("--network-threshold", type=float, default=0.6)
+    parser.add_argument("--network-presence-threshold", type=float, default=0.0)
+    parser.add_argument("--network-algorithm", default="louvain")
+    parser.add_argument("--network-seed", type=int, default=42)
+    parser.add_argument("--network-log1p", dest="network_log1p", action="store_true")
+    parser.add_argument("--no-network-log1p", dest="network_log1p", action="store_false")
+    parser.set_defaults(network_log1p=True)
     args = parser.parse_args()
 
     # Ensure folder structure
@@ -98,6 +106,12 @@ def main():
         "k_max": args.k_max,
         "k": args.k,
         "skip_conda_install": args.skip_conda_install,
+        "network_metric": args.network_metric,
+        "network_threshold": args.network_threshold,
+        "network_presence_threshold": args.network_presence_threshold,
+        "network_algorithm": args.network_algorithm,
+        "network_seed": args.network_seed,
+        "network_log1p": args.network_log1p,
     }
     write_json("outputs/run_params.json", run_params)
 
@@ -167,6 +181,21 @@ def main():
         f"--fig-dir outputs/figures --k-min {args.k_min} --k-max {args.k_max} --k {args.k}"
     )
     run_cmd(cluster_cmd, commands_log=commands_log)
+
+    # Step 07: network modularity analysis
+    network_cmd = (
+        f"\"{python}\" scripts/07_network_modularity.py "
+        f"--raw-matrix outputs/tables/genus_enzyme_matrix_raw.csv "
+        f"--cpm-matrix outputs/tables/genus_enzyme_matrix_cpm.csv "
+        f"--kmeans outputs/tables/genus_clusters_kmeans.csv "
+        f"--metric {args.network_metric} --threshold {args.network_threshold} "
+        f"--presence-threshold {args.network_presence_threshold} "
+        f"--algorithm {args.network_algorithm} --seed {args.network_seed} "
+        f"--commands-log {commands_log}"
+    )
+    if not args.network_log1p:
+        network_cmd += " --no-log1p"
+    run_cmd(network_cmd, commands_log=commands_log)
 
     # Step 99: report
     report_cmd = (
