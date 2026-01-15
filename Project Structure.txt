@@ -1,0 +1,131 @@
+.
+├── .git
+│   ├── HEAD
+│   ├── config
+│   ├── cursor
+│   │   └── crepe
+│   │       └── 1014989a0655eab02f3933ad0b95512cf97222a3
+│   │           ├── index.bin
+│   │           ├── metadata.json
+│   │           └── postings.bin
+│   ├── description
+│   ├── hooks
+│   │   ├── applypatch-msg.sample
+│   │   ├── commit-msg.sample
+│   │   ├── fsmonitor-watchman.sample
+│   │   ├── post-update.sample
+│   │   ├── pre-applypatch.sample
+│   │   ├── pre-commit.sample
+│   │   ├── pre-merge-commit.sample
+│   │   ├── pre-push.sample
+│   │   ├── pre-rebase.sample
+│   │   ├── pre-receive.sample
+│   │   ├── prepare-commit-msg.sample
+│   │   ├── push-to-checkout.sample
+│   │   ├── sendemail-validate.sample
+│   │   └── update.sample
+│   ├── index
+│   ├── info
+│   │   └── exclude
+│   ├── logs
+│   │   ├── HEAD
+│   │   └── refs
+│   │       ├── heads
+│   │       │   └── main
+│   │       └── remotes
+│   │           └── origin
+│   │               └── HEAD
+│   ├── objects
+│   │   ├── info
+│   │   └── pack
+│   │       ├── pack-4498059b7192af5dbd61cf19804894f75826e4be.idx
+│   │       ├── pack-4498059b7192af5dbd61cf19804894f75826e4be.pack
+│   │       └── pack-4498059b7192af5dbd61cf19804894f75826e4be.rev
+│   ├── packed-refs
+│   └── refs
+│       ├── heads
+│       │   └── main
+│       ├── remotes
+│       │   └── origin
+│       │       └── HEAD
+│       └── tags
+├── .gitignore
+├── Metagenomic Profiling of Plastic-Degrading Microbial Communities in Urban Water Bodies.pdf
+├── Metagenomic-Profiling-of-Plastic-Degrading-Microbial-Communities-in-Urban-Water-Bodies.pdf
+├── Project Structure.txt
+├── README.md
+├── methodology.png
+├── outputs
+│   ├── enzyme_hits
+│   │   ├── enzyme_hits.tsv
+│   │   ├── filtered_read1.tsv
+│   │   ├── filtered_read2.tsv
+│   │   ├── raw_read1.tsv
+│   │   └── raw_read2.tsv
+│   ├── figures
+│   │   ├── genus_enzyme_heatmap.png
+│   │   ├── kmeans_elbow.png
+│   │   ├── kmeans_silhouette.png
+│   │   ├── network
+│   │   │   ├── genus_enzyme_heatmap_by_module.png
+│   │   │   ├── genus_network_modules.png
+│   │   │   ├── kmeans_vs_modules_heatmap.png
+│   │   │   └── module_barplots.png
+│   │   ├── pca_kmeans.png
+│   │   └── top_genera_barplot.png
+│   ├── metadata
+│   │   ├── metadata.json
+│   │   └── sra_runinfo.csv
+│   ├── metadata_summary.md
+│   ├── network
+│   │   ├── genus_similarity_edges.tsv
+│   │   └── genus_similarity_nodes.tsv
+│   ├── qc_summary.json
+│   ├── qc_summary.md
+│   ├── report.md
+│   ├── run_params.json
+│   ├── summary
+│   │   ├── run_summary.json
+│   │   └── run_summary.md
+│   └── tables
+│       ├── enzyme_hits_with_genus.tsv
+│       ├── genus_clusters.csv
+│       ├── genus_enzyme_matrix_cpm.csv
+│       ├── genus_enzyme_matrix_raw.csv
+│       ├── genus_modules_modularity.csv
+│       ├── kmeans_vs_modules.csv
+│       └── module_summary_modularity.csv
+├── refs
+│   ├── README_refs.md
+│   ├── enzyme_family_map.tsv
+│   ├── plastic_enzymes.dmnd
+│   ├── plastic_enzymes.fasta
+│   ├── protein_to_taxonomy.tsv
+│   └── raw
+│       ├── uniprot_AlkB.fasta
+│       ├── uniprot_AlkB.tsv
+│       ├── uniprot_Cutinase_like.fasta
+│       ├── uniprot_Cutinase_like.tsv
+│       ├── uniprot_MHETase_like.fasta
+│       ├── uniprot_MHETase_like.tsv
+│       ├── uniprot_PETase_like.fasta
+│       ├── uniprot_PETase_like.tsv
+│       ├── uniprot_Polyesterase_like.fasta
+│       └── uniprot_Polyesterase_like.tsv
+├── requirements.txt
+├── run_pipeline.py
+└── scripts
+    ├── 00_metadata.py
+    ├── 01_qc_sanity.py
+    ├── 02_fetch_refs.py
+    ├── 03_diamond_search.py
+    ├── 04_taxonomy_map.py
+    ├── 05_aggregate.py
+    ├── 06_cluster_and_plots.py
+    ├── 07_network_modularity.py
+    ├── 07_run_summary.py
+    ├── 99_make_report.py
+    ├── __init__.py
+    └── utils.py
+
+31 directories, 98 files
