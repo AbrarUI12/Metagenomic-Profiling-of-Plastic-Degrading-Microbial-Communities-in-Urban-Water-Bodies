@@ -1,6 +1,6 @@
 # Plastic-degrading genetic potential profiling (SRR23872596)
 
-This project performs a thesis-grade, conservative screen for putative plastic-degrading enzymes in a polluted freshwater sediment metagenome (SRR23872596). It reports genetic potential and homology-based inference only, not active degradation.
+This project performs a thesis-grade, conservative screen for putative plastic-degrading enzymes in a polluted freshwater sediment metagenome (based on SRR23872596). It reports genetic potential and homology-based inference only, not active degradation.
 
 ## Quick start
 1) Install Python dependencies:
