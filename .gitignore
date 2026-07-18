@@ -53,6 +53,10 @@ outputs/tmp/
 # Local Windows-run baseline kept for validation (Windows results also live in git history)
 outputs_windows_baseline/
 
+# Personal working notes / draft citation list (not for the repo)
+references_suggested.md
+handout.md
+
 # Misc
 *.tmp
 *.temp
