@@ -3,7 +3,7 @@ import argparse
 import csv
 import json
 import sys
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 # Allow "from scripts.utils import ensure_dir, write_json" like your other files
@@ -164,7 +164,7 @@ def main():
 
     # Some people like “genes” = unique proteins; report both flavors
     summary = {
-        "generated_utc": datetime.utcnow().isoformat() + "Z",
+        "generated_utc": datetime.now(timezone.utc).replace(tzinfo=None).isoformat() + "Z",
         "inputs": {
             "qc_path": args.qc,
             "params_path": args.params,

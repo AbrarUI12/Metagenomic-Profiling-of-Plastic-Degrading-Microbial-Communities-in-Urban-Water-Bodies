@@ -1,7 +1,7 @@
 import argparse
 import json
 import sys
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 sys.path.append(str(Path(__file__).resolve().parents[1]))
@@ -61,7 +61,7 @@ def fastq_stats(path, sample_reads=10000):
 def write_markdown(out_md, stats):
     lines = []
     lines.append("# FASTQ sanity summary\n")
-    lines.append(f"- Generated (UTC): {datetime.utcnow().isoformat()}Z\n")
+    lines.append(f"- Generated (UTC): {datetime.now(timezone.utc).replace(tzinfo=None).isoformat()}Z\n")
     for label, st in stats.items():
         lines.append(f"\n## {label}\n")
         lines.append(f"- Path: {st['path']}\n")

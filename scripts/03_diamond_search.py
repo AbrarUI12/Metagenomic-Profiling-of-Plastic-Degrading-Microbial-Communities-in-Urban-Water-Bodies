@@ -1,6 +1,8 @@
 import argparse
 import csv
+import platform
 import sys
+import tarfile
 from pathlib import Path
 from urllib.request import urlopen
 from zipfile import ZipFile
@@ -83,13 +85,27 @@ def conda_install_diamond(commands_log=None, skip=False):
     return which("diamond") is not None
 
 
+DIAMOND_VERSION = "v2.2.4"
+
+
+def diamond_binary_name():
+    return "diamond.exe" if platform.system() == "Windows" else "diamond"
+
+
 def download_diamond(commands_log=None):
-    # Best-effort download for Windows. If it fails, caller falls back.
+    # Best-effort, platform-aware download. If it fails, caller falls back.
+    system = platform.system()
+    if system == "Windows":
+        asset = "diamond-windows.zip"
+    elif system == "Darwin":
+        asset = "diamond-macos.tar.gz"
+    else:
+        asset = "diamond-linux64.tar.gz"
     url = (
         "https://github.com/bbuchfink/diamond/releases/download/"
-        "v2.1.18/diamond-windows.zip"
+        f"{DIAMOND_VERSION}/{asset}"
     )
-    dest = Path("tools/diamond-windows.zip")
+    dest = Path("tools") / asset
     out_dir = Path("tools/diamond")
     ensure_dir(out_dir)
     try:
@@ -97,9 +113,20 @@ def download_diamond(commands_log=None):
             log_command(commands_log, f"DOWNLOAD {url} -> {dest}")
         with urlopen(url) as resp:
             dest.write_bytes(resp.read())
-        with ZipFile(dest, "r") as zf:
-            zf.extractall(out_dir)
-        return True
+        if asset.endswith(".zip"):
+            with ZipFile(dest, "r") as zf:
+                zf.extractall(out_dir)
+        else:
+            with tarfile.open(dest, "r:gz") as tf:
+                for member in tf.getmembers():
+                    # Flatten: extract only the diamond binary into out_dir
+                    if Path(member.name).name == "diamond":
+                        member.name = "diamond"
+                        tf.extract(member, out_dir)
+        binary = out_dir / diamond_binary_name()
+        if binary.exists():
+            binary.chmod(0o755)
+        return binary.exists()
     except Exception:
         return False
 
@@ -108,7 +135,7 @@ def find_diamond():
     diamond = which("diamond")
     if diamond:
         return diamond
-    local = Path("tools/diamond/diamond.exe")
+    local = Path("tools/diamond") / diamond_binary_name()
     if local.exists():
         return str(local)
     return None

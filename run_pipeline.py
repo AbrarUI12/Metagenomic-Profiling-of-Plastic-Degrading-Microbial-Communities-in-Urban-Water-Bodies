@@ -13,7 +13,8 @@ def log_versions(out_path):
     lines.append(f"python_version\t{sys.version.split()[0]}\n")
     lines.append(f"os\t{platform.platform()}\n")
     diamond_path = which("diamond")
-    local_diamond = Path("tools/diamond/diamond.exe")
+    diamond_bin = "diamond.exe" if platform.system() == "Windows" else "diamond"
+    local_diamond = Path("tools/diamond") / diamond_bin
     if not diamond_path and local_diamond.exists():
         diamond_path = str(local_diamond)
     if diamond_path:

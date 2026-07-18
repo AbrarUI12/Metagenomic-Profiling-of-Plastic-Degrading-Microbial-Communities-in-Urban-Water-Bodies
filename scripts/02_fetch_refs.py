@@ -2,7 +2,7 @@ import argparse
 import csv
 import sys
 import ssl
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
@@ -187,7 +187,7 @@ def main():
                 ]
             )
 
-    retrieval_date = datetime.utcnow().strftime("%Y-%m-%d")
+    retrieval_date = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     lines = []
     lines.append("# Reference sequences for plastic-degrading enzymes\n")
     lines.append(f"- Retrieval date (UTC): {retrieval_date}\n")

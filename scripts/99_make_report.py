@@ -1,7 +1,7 @@
 import argparse
 import json
 import sys
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 sys.path.append(str(Path(__file__).resolve().parents[1]))
@@ -84,7 +84,7 @@ def main():
 
     lines = []
     lines.append("# Plastic-degrading genetic potential profiling report\n")
-    lines.append(f"- Generated (UTC): {datetime.utcnow().isoformat()}Z\n")
+    lines.append(f"- Generated (UTC): {datetime.now(timezone.utc).replace(tzinfo=None).isoformat()}Z\n")
     lines.append("\n## Research topic\n")
     lines.append(f"{TOPIC_DESCRIPTION}\n")
 

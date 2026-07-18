@@ -46,6 +46,10 @@ SRR23872596_2.fastq
 
 # Pipeline outputs (regenerable)
 reports/
+outputs/tmp/
+
+# Local Windows-run baseline kept for validation (Windows results also live in git history)
+outputs_windows_baseline/
 
 # Misc
 *.tmp

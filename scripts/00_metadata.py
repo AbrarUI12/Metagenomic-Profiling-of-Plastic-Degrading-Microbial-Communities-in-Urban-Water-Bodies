@@ -3,7 +3,7 @@ import csv
 import json
 import sys
 import ssl
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from urllib.request import urlopen
 
@@ -87,7 +87,7 @@ def summarize_metadata(row):
 def write_markdown(out_md, summary, source_note, out_json_path):
     lines = []
     lines.append("# Metadata summary\n")
-    lines.append(f"- Retrieval date (UTC): {datetime.utcnow().isoformat()}Z\n")
+    lines.append(f"- Retrieval date (UTC): {datetime.now(timezone.utc).replace(tzinfo=None).isoformat()}Z\n")
     lines.append(f"- Source: {source_note}\n")
     if summary:
         lines.append("\n## Key fields\n")

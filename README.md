@@ -2,21 +2,42 @@
 
 This project performs a thesis-grade, conservative screen for putative plastic-degrading enzymes in a polluted freshwater sediment metagenome (based on SRR23872596). It reports genetic potential and homology-based inference only, not active degradation.
 
-## Quick start
-1) Install Python dependencies:
+## Quick start (Linux)
+
+1) Create an isolated environment and install Python dependencies. This project uses
+[`uv`](https://docs.astral.sh/uv/); any venv + pip works too.
 ```
-python -m pip install -r requirements.txt
+uv venv --python 3.12 .venv
+uv pip install --python .venv -r requirements.txt
 ```
 
-2) Run the full pipeline from the project root:
+2) Download the sequencing dataset from EBI-ENA (crash-safe, resumable across power loss):
 ```
-python run_pipeline.py
+.venv/bin/python scripts/fetch_dataset.py
+```
+This writes `SRR23872596_1.fastq` and `SRR23872596_2.fastq` into the project root.
+Re-run the same command after any interruption — the file that was mid-download restarts
+from scratch and already-finished files are skipped (verified by size + md5). See
+"Dataset download" below for options.
+
+3) Run the full pipeline from the project root:
+```
+.venv/bin/python run_pipeline.py
 ```
 
 Optional quick test (subsample reads):
 ```
-python run_pipeline.py --max-reads 200000
+.venv/bin/python run_pipeline.py --max-reads 200000
 ```
+
+## Dataset download
+`scripts/fetch_dataset.py` fetches paired FASTQ files for the run accession directly from
+EBI-ENA over HTTPS and decompresses them to plain `.fastq`.
+- `--outdir data` — download into `data/` instead of the project root.
+- `--no-gunzip` — keep `.fastq.gz` only (DIAMOND can read gzipped input; the pure-Python
+  QC/fallback steps expect uncompressed `.fastq`).
+- `--keep-gz` — keep the `.fastq.gz` alongside the decompressed `.fastq`.
+- `--srr <ACC>` — use a different SRA run accession.
 
 ## Folder structure
 - `data/` input data (optional staging)
@@ -61,9 +82,19 @@ Default thresholds (configurable in `run_pipeline.py` arguments):
 ## DIAMOND installation and fallback
 The pipeline will try to use DIAMOND if available. If DIAMOND is missing:
 1) It attempts `conda install -y -c bioconda diamond` (if conda exists).
-2) If that fails, it downloads the Windows binary from the DIAMOND GitHub release into `tools/diamond/diamond.exe`.
+2) If that fails, it downloads the correct binary for the current OS from the DIAMOND
+   GitHub release into `tools/diamond/` (Linux: `diamond-linux64.tar.gz` → `tools/diamond/diamond`;
+   macOS and Windows are handled too). The binary is auto-detected on later runs.
 3) If BLAST+ is installed, it can fall back to `blastx`.
 4) Otherwise, it uses a pure-Python k-mer screen (very conservative and slower, intended for small test runs).
+
+To install DIAMOND manually instead (Linux):
+```
+mkdir -p tools/diamond
+curl -sL https://github.com/bbuchfink/diamond/releases/download/v2.2.4/diamond-linux64.tar.gz \
+  | tar -xz -C tools/diamond diamond
+chmod +x tools/diamond/diamond
+```
 
 ## Reproducibility and logs
 - Commands: `outputs/logs/commands.log`
