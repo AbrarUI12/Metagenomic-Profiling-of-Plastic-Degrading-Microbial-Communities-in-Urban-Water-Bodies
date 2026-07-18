@@ -9,7 +9,7 @@ from zipfile import ZipFile
 
 sys.path.append(str(Path(__file__).resolve().parents[1]))
 
-from scripts.utils import ensure_dir, log_command, run_cmd, which
+from scripts.utils import ensure_dir, log_command, open_text, run_cmd, which
 
 
 def read_family_map(path):
@@ -55,7 +55,7 @@ def filter_hits(in_path, out_path, family_map, evalue, pident, min_aln_len):
 def prepare_fastq_subset(in_fastq, out_fastq, max_reads):
     ensure_dir(Path(out_fastq).parent)
     reads = 0
-    with open(in_fastq, "r", encoding="utf-8", errors="replace") as fin, open(
+    with open_text(in_fastq) as fin, open(
         out_fastq, "w", encoding="utf-8"
     ) as fout:
         while reads < max_reads:
@@ -299,7 +299,7 @@ def kmer_fallback_search(fastq, fasta_db, out_tsv, family_map, k=7, commands_log
         log_command(commands_log, f"KMER_FALLBACK {fastq} vs {fasta_db} k={k}")
     index = kmer_index_from_fasta(fasta_db, k)
     ensure_dir(Path(out_tsv).parent)
-    with open(fastq, "r", encoding="utf-8", errors="replace") as fin, open(
+    with open_text(fastq) as fin, open(
         out_tsv, "w", encoding="utf-8", newline=""
     ) as fout:
         writer = csv.writer(fout, delimiter="\t")

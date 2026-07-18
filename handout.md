@@ -73,6 +73,55 @@ top genus (266 hits), 4 network modules.
   happened and was restored via `git checkout -- outputs/enzyme_hits/`. Harmless for the real
   single-dataset run (they get regenerated correctly), just can't isolate test runs there.
 
+## Full dataset inventory (BioProject PRJNA944918 — Brahmaputra river sediment metagenome)
+Confirmed via ENA: **18 runs**, all "sediment metagenome" from Brahmaputra locations
+(Tezpur, Morigaon, Dhubri, Dibrugarh, Uzanbazar, Sadiya, Palasbari, Dhuburi, Tsk, Sad...).
+Original work used only **SRR23872596** (Tezpur, TZB).
+
+- Total **compressed download (.fastq.gz): ~55.5 GB**
+- Total **uncompressed (.fastq): ~260 GB** (estimate; could be ~285 GB)
+- Free disk on /home: **~231 GB** → **all-uncompressed-at-once does NOT fit.**
+- Largest single run: SRR28925922 (7.6 GB gz → ~42 GB fastq).
+
+### AMPLICON-vs-shotgun — RESOLVED (2026-07-19)
+SRA tags every run `library_strategy = AMPLICON` (selection PCR), which conflicted with
+`explanation.md` ("shotgun metagenomics"). Resolved definitively:
+- **Peer-reviewed publication** for PRJNA944918: *"Metagenomic insights into microbial
+  community, functional annotation, and antibiotic resistance genes in Himalayan Brahmaputra
+  River sediment, India"*, Frontiers in Microbiology 2024 (PMC11614985) — states
+  **"high-throughput shotgun metagenomics."**
+- **Empirical:** baseline SRR23872596 hits span 4 unrelated enzyme families at high identity
+  (469 hits ≥70% pident; median 55.8%) — impossible from 16S amplicon reads. → data is shotgun.
+- **Conclusion:** the SRA `AMPLICON` label is a **mislabel**. For the paper, describe as shotgun
+  metagenomics, cite PMC11614985, and do NOT copy the SRA strategy tag.
+- Note: the published paper covers **6 samples** (BRS 1-6 = the PTM series: SRR23872593-597 +
+  SRR23961995). The other 12 runs were added to the same BioProject later.
+
+### Storage / HDD (confirmed 2026-07-19)
+- HDD `/mnt/shinrinyoku`: **NTFS (ntfs-3g/fuseblk), ~455 GB free**, writable as user. Fits all.
+- Plan: DATA on HDD; keep `.venv` + `tools/diamond` on the SSD (/home). Peak (gz+fastq) ~315 GB — fits.
+- `scripts/fetch_dataset.py` now accepts `--acc PRJNA944918` (whole project) or a single run;
+  same crash-safe per-file logic. Verified: lists 18 runs / 36 files / 55.5 GB and writes to HDD.
+
+**Processing approach — DECIDED: gzip-native (2026-07-19).** The pipeline now reads `.fastq.gz`
+directly, so no uncompression is ever needed — total footprint is just the ~55 GB of .gz.
+- Added `open_text()` to `utils.py` (transparent gz/plain reader); `01_qc_sanity.py`,
+  `03` subset + kmer-fallback now use it. DIAMOND reads .gz natively. Verified on synthetic gz.
+- `.gitignore` now ignores `*.fastq.gz` too.
+- Because it's only 55 GB and gz reads are lossless-identical, **download to the SSD in-repo
+  `data/` (gitignored) is recommended over the HDD** — SSD is much faster for DIAMOND I/O and 55 GB
+  fits in the 230 GB free. HDD remains a fine alternative if SSD space is wanted for other things.
+
+### Hardware
+- CPU: i5-12400, **12 threads** → run DIAMOND with `--threads 12`.
+- GPU: RTX 3060 Ti 8 GB — **DIAMOND is CPU-only, GPU gives no speedup here**; the reference DB is
+  tiny (~18k proteins) so CPU search is already fast. GPU not used by this pipeline.
+- SSD /home: 230 GB free. HDD /mnt/shinrinyoku: 455 GB free (NTFS).
+
+### gz is scientifically identical
+gzip is lossless: DIAMOND (and open_text) yield byte-identical reads/bases from .gz vs .fastq.
+Working from .gz changes nothing about the results — it only saves ~205 GB of disk.
+
 ## Next steps (after this)
 1. Owner commits the port (see commit commands provided in chat). Owner is author; assistant not co-author.
 2. Owner downloads dataset: `.venv/bin/python scripts/fetch_dataset.py` (~1.7 GB gz → ~fastq).

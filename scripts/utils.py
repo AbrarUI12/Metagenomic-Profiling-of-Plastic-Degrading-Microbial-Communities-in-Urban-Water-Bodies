@@ -1,3 +1,4 @@
+import gzip
 import json
 import os
 import shutil
@@ -8,6 +9,19 @@ from pathlib import Path
 
 def ensure_dir(path):
     Path(path).mkdir(parents=True, exist_ok=True)
+
+
+def open_text(path, mode="r"):
+    """Open a text file transparently whether or not it is gzip-compressed.
+
+    Detects by the ``.gz`` suffix. Reads use errors='replace' so a stray byte in
+    a large FASTQ never aborts a run. Used so the pipeline can consume .fastq.gz
+    directly without a separate decompression step (DIAMOND already reads .gz).
+    """
+    path = str(path)
+    if path.endswith(".gz"):
+        return gzip.open(path, mode + "t", encoding="utf-8", errors="replace")
+    return open(path, mode, encoding="utf-8", errors="replace")
 
 
 def utc_now():

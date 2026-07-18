@@ -6,7 +6,7 @@ from pathlib import Path
 
 sys.path.append(str(Path(__file__).resolve().parents[1]))
 
-from scripts.utils import ensure_dir, write_json
+from scripts.utils import ensure_dir, open_text, write_json
 
 
 def fastq_stats(path, sample_reads=10000):
@@ -18,7 +18,7 @@ def fastq_stats(path, sample_reads=10000):
     sample_checked = 0
     sample_mismatch = 0
 
-    with open(path, "r", encoding="utf-8", errors="replace") as f:
+    with open_text(path) as f:
         while True:
             header = f.readline()
             if not header:

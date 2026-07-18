@@ -41,6 +41,8 @@ tools/
 # Data & large raw inputs
 data/
 SRR*.fastq
+SRR*.fastq.gz
+*.fastq.gz
 SRR23872596_1.fastq
 SRR23872596_2.fastq
 
