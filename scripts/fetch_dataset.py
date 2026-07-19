@@ -3,17 +3,20 @@
 Downloads paired-end FASTQ files directly from EBI-ENA over HTTPS and (by default)
 decompresses them to plain .fastq that ``run_pipeline.py`` expects.
 
-Design for large, resumable-across-power-loss downloads
-------------------------------------------------------
+Design for large downloads over an unreliable connection
+--------------------------------------------------------
 Each file is streamed to a temporary ``<name>.part`` while its md5 is computed.
 Only after the full download matches ENA's reported size AND md5 is the ``.part``
-renamed to its final name. Therefore:
+renamed to its final name. Two failure modes are handled differently:
 
 * A file that already exists with the correct size + md5 is skipped (done).
-* If the machine powers off mid-download, only a ``<name>.part`` is left behind.
-  On the next run that partial file is DELETED and re-downloaded from scratch
-  (no byte-range resume), then the remaining files continue. This matches the
-  requirement: whatever was mid-download restarts cleanly; finished files are kept.
+* **Transient blip while the run is live** (brief internet outage, stalled socket):
+  a socket timeout breaks the stall, then the file RESUMES from where it stopped
+  via an HTTP Range request (ENA supports 206) — no wasted re-download. Retries a
+  few times with a short wait, verifying md5 over the whole file at the end.
+* **Power-off / process killed:** on the NEXT run the leftover ``<name>.part`` is
+  RESUMED via HTTP Range and the whole file is md5-verified at the end (a corrupt
+  partial fails the check and is re-downloaded from scratch). Finished files are skipped.
 
 The ``--acc`` argument accepts a single run (SRRxxxx) OR a whole BioProject
 (PRJNAxxxxxx) — ENA returns every run in the project, and all of them are fetched.
@@ -30,8 +33,8 @@ Usage
     .venv/bin/python scripts/fetch_dataset.py --no-gunzip     # keep only .fastq.gz
     .venv/bin/python scripts/fetch_dataset.py --keep-gz       # keep .gz after gunzip
 
-Just re-run the exact same command after any interruption; it resumes safely
-(finished + verified files skipped, the mid-download file restarts from scratch).
+Just re-run the exact same command after any interruption — it resumes the interrupted
+file from where it stopped (md5-verified) and skips already-finished files.
 """
 
 import argparse
@@ -39,6 +42,7 @@ import gzip
 import hashlib
 import shutil
 import sys
+import time
 from pathlib import Path
 from urllib.request import Request, urlopen
 
@@ -48,12 +52,26 @@ ENA_FILEREPORT = (
     "&fields=run_accession,sample_title,fastq_ftp,fastq_bytes,fastq_md5&format=tsv"
 )
 CHUNK = 1024 * 1024  # 1 MiB
-MAX_ATTEMPTS = 4  # per file; each attempt restarts from scratch (no resume)
+MAX_ATTEMPTS = 6  # per file
+# If no data arrives for this many seconds (e.g. the connection stalls during a
+# brief internet outage), the read raises instead of hanging forever, so the
+# retry loop can kick in. Without this the download can freeze indefinitely.
+SOCKET_TIMEOUT = 60
+RETRY_WAIT = 10  # seconds to wait before a retry, giving the network time to recover
+
+
+class FileUnavailableError(RuntimeError):
+    """The host served something other than the file — e.g. an HTML directory
+    listing where the .fastq.gz should be. This happens when a run's object is
+    missing/broken on the ENA mirror (occasionally a file gets replaced by an
+    empty directory during a re-sync). Retrying within the same run won't help,
+    so this is raised to fail this file fast instead of burning every attempt.
+    """
 
 
 def http_get_text(url):
     req = Request(url, headers={"User-Agent": "plastic-metagenome-pipeline/1.0"})
-    with urlopen(req) as resp:
+    with urlopen(req, timeout=SOCKET_TIMEOUT) as resp:
         return resp.read().decode("utf-8")
 
 
@@ -138,52 +156,103 @@ def download_one(file_info, outdir):
         print(f"[skip] {name} already present and verified ({human(expected_size)}).")
         return final_path
 
+    # A leftover .part (from a power-off, a kill, or an earlier blip) is RESUMED, not
+    # discarded: the loop continues it via HTTP Range, and the final md5 check over the
+    # whole file guarantees integrity — a corrupt partial fails md5 and is re-downloaded.
     for attempt in range(1, MAX_ATTEMPTS + 1):
-        # Always start fresh: delete any leftover partial from a prior crash/attempt.
-        if part_path.exists():
-            print(f"[clean] removing stale partial {part_path.name}")
-            part_path.unlink()
+        resume_from = part_path.stat().st_size if part_path.exists() else 0
 
-        print(
-            f"[get] {name} ({human(expected_size)}) attempt {attempt}/{MAX_ATTEMPTS}",
-            flush=True,
-        )
+        # Already fully on disk but not yet verified/renamed (e.g. killed just before
+        # the rename): verify and finish, don't re-request past EOF.
+        if expected_size is not None and resume_from >= expected_size:
+            if resume_from == expected_size and (
+                not expected_md5 or md5_of_file(part_path) == expected_md5
+            ):
+                part_path.rename(final_path)
+                print(f"[done] {name} verified ({human(expected_size)}).")
+                return final_path
+            part_path.unlink()
+            resume_from = 0
+
         h = hashlib.md5()
-        downloaded = 0
-        try:
-            req = Request(url, headers={"User-Agent": "plastic-metagenome-pipeline/1.0"})
-            with urlopen(req) as resp, open(part_path, "wb") as out:
-                while True:
-                    chunk = resp.read(CHUNK)
-                    if not chunk:
-                        break
-                    out.write(chunk)
+        headers = {"User-Agent": "plastic-metagenome-pipeline/1.0"}
+        if resume_from:
+            # Re-hash bytes already on disk so the final md5 covers the whole file.
+            with open(part_path, "rb") as f:
+                for chunk in iter(lambda: f.read(CHUNK), b""):
                     h.update(chunk)
-                    downloaded += len(chunk)
-                    if expected_size:
-                        pct = downloaded / expected_size * 100
-                        print(
-                            f"\r    {human(downloaded)}/{human(expected_size)} ({pct:5.1f}%)",
-                            end="",
-                            flush=True,
-                        )
+            headers["Range"] = f"bytes={resume_from}-"
+            mode = "ab"
+            print(f"[resume] {name} from {human(resume_from)}/{human(expected_size)} "
+                  f"(attempt {attempt}/{MAX_ATTEMPTS})", flush=True)
+        else:
+            mode = "wb"
+            print(f"[get] {name} ({human(expected_size)}) attempt {attempt}/{MAX_ATTEMPTS}",
+                  flush=True)
+
+        downloaded = resume_from
+        try:
+            req = Request(url, headers=headers)
+            with urlopen(req, timeout=SOCKET_TIMEOUT) as resp:
+                # If we asked to resume but the server ignored Range (200, not 206),
+                # it resends the whole file; appending would corrupt it, so restart.
+                status = getattr(resp, "status", None) or resp.getcode()
+                # A real .fastq.gz is served as gzip/octet-stream. If the host hands
+                # back an HTML page, urllib has followed a redirect to an error page or
+                # a directory listing standing in for the missing file — downloading it
+                # would just yield a few hundred bytes that fail the size check on every
+                # attempt. Bail out immediately with a clear message instead.
+                ctype = resp.headers.get_content_type()
+                if ctype.startswith("text/"):
+                    raise FileUnavailableError(
+                        f"host returned {ctype} ({resp.geturl()}), not the file — "
+                        "the object is missing/broken on the ENA mirror right now"
+                    )
+                if resume_from and status != 206:
+                    print("[warn] server ignored resume; restarting this file from scratch")
+                    part_path.unlink()
+                    h = hashlib.md5()
+                    downloaded = 0
+                    mode = "wb"
+                with open(part_path, mode) as out:
+                    while True:
+                        chunk = resp.read(CHUNK)
+                        if not chunk:
+                            break
+                        out.write(chunk)
+                        h.update(chunk)
+                        downloaded += len(chunk)
+                        if expected_size:
+                            pct = downloaded / expected_size * 100
+                            print(
+                                f"\r    {human(downloaded)}/{human(expected_size)} ({pct:5.1f}%)",
+                                end="",
+                                flush=True,
+                            )
             print()
-        except Exception as exc:  # network error, interrupted, etc.
-            print(f"\n[warn] download failed: {exc}")
-            if part_path.exists():
-                part_path.unlink()
+        except FileUnavailableError:
+            # Not a network blip — the file isn't really there. Don't retry.
+            raise
+        except Exception as exc:  # stall/timeout/network drop
+            print(f"\n[warn] connection problem: {exc}")
+            # Keep the partial so the next attempt RESUMES (no wasted re-download).
             if attempt == MAX_ATTEMPTS:
                 raise
+            print(f"[retry] waiting {RETRY_WAIT}s, then resuming from "
+                  f"{human(part_path.stat().st_size if part_path.exists() else 0)} ...")
+            time.sleep(RETRY_WAIT)
             continue
 
         # Verify size and md5 before accepting.
         if expected_size is not None and downloaded != expected_size:
-            print(f"[warn] size mismatch ({downloaded} != {expected_size}); retrying.")
-            part_path.unlink()
+            print(f"[warn] size mismatch ({downloaded} != {expected_size}); restarting file.")
+            if part_path.exists():
+                part_path.unlink()
             continue
         if expected_md5 and h.hexdigest() != expected_md5:
-            print(f"[warn] md5 mismatch; retrying.")
-            part_path.unlink()
+            print("[warn] md5 mismatch; restarting file.")
+            if part_path.exists():
+                part_path.unlink()
             continue
 
         part_path.rename(final_path)
@@ -259,14 +328,30 @@ def main():
     print()
 
     gz_paths = []
+    failed = []
     for idx, f in enumerate(files, 1):
         print(f"[{idx}/{len(files)}] {f['run']}", end="  ")
-        gz_paths.append(download_one(f, outdir))
+        try:
+            gz_paths.append(download_one(f, outdir))
+        except Exception as exc:
+            # One bad file (e.g. missing on the ENA mirror) must not abort the whole
+            # batch — record it, keep going, and report every failure at the end.
+            print(f"[skip-file] {f['name']}: {exc}")
+            failed.append((f["name"], str(exc)))
 
     if args.gunzip:
         print()
         for gz in gz_paths:
             gunzip_to_fastq(gz, keep_gz=args.keep_gz)
+
+    if failed:
+        print(f"\n[warning] {len(failed)} of {len(files)} file(s) could not be downloaded:")
+        for name, why in failed:
+            print(f"  - {name}: {why}")
+        print("Re-run the same command later to retry only the missing files "
+              "(finished files are skipped). If a file stays broken on ENA, fetch that "
+              "run from NCBI instead (SRA .sra -> fasterq-dump).")
+        sys.exit(1)
 
     print(f"\nAll dataset files ready in {outdir}/")
     if len(runs) == 1 and args.gunzip:
@@ -286,8 +371,8 @@ if __name__ == "__main__":
     try:
         main()
     except KeyboardInterrupt:
-        print("\n[interrupted] Re-run the same command to resume "
-              "(the in-progress file restarts; finished files are kept).")
+        print("\n[interrupted] Re-run the same command; it resumes the interrupted "
+              "file from where it stopped and skips finished files.")
         sys.exit(130)
     except Exception as exc:
         print(f"[fetch_dataset] Error: {exc}", file=sys.stderr)
