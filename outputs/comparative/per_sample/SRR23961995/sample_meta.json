@@ -1,0 +1,10 @@
+{
+  "depth_read_pairs": 13000000,
+  "evalue": 1e-05,
+  "hits": 19793,
+  "min_aln_len": 30,
+  "pident": 30.0,
+  "reads_searched": 26000000,
+  "run_accession": "SRR23961995",
+  "trim_to": 150
+}

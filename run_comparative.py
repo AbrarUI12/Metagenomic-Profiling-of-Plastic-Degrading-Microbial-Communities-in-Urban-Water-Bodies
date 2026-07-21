@@ -50,9 +50,13 @@ def main():
         "--depth", type=int, default=13_000_000,
         help="read pairs searched per sample (default 13M ~ smallest library)",
     )
+    parser.add_argument(
+        "--trim-to", type=int, default=150,
+        help="hard-trim reads to this length so all sequencing batches are comparable",
+    )
     parser.add_argument("--evalue", type=float, default=1e-5)
     parser.add_argument("--pident", type=float, default=30.0)
-    parser.add_argument("--min-aln-len", type=int, default=50)
+    parser.add_argument("--min-aln-len", type=int, default=30)
     parser.add_argument("--permutations", type=int, default=999)
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--limit", type=int, default=0, help="only process first N samples (testing)")
@@ -83,6 +87,7 @@ def main():
             "--tmp-dir", str(out_root / "tmp"),
             "--depth", str(args.depth),
             "--threads", str(args.threads),
+            "--trim-to", str(args.trim_to),
             "--evalue", str(args.evalue),
             "--pident", str(args.pident),
             "--min-aln-len", str(args.min_aln_len),

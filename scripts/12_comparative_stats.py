@@ -88,6 +88,11 @@ def permanova(distance, labels, permutations=999, seed=42):
         ssa = sst - ssw
         if ssw <= 0:
             return np.nan, np.nan
+        # Bray-Curtis is not Euclidean, so with very unbalanced groups the between-group
+        # term can come out slightly negative. A negative pseudo-F/R2 is not meaningful
+        # (it just means the grouping explains nothing), so clamp at zero rather than
+        # reporting an impossible statistic.
+        ssa = max(ssa, 0.0)
         f = (ssa / (a - 1)) / (ssw / (n - a))
         return f, ssa / sst if sst > 0 else np.nan
 

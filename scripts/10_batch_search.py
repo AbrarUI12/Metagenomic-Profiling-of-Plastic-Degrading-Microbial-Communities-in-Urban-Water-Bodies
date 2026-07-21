@@ -48,6 +48,51 @@ def read_metadata(path):
         return list(csv.DictReader(f, delimiter="\t"))
 
 
+def prepare_subset(in_fastq, out_fastq, max_reads, trim_to=0):
+    """Write the first ``max_reads`` records, optionally hard-trimmed to ``trim_to`` bp.
+
+    Trimming exists to remove a batch confound: read length differs between the
+    sequencing submissions in this BioProject (150 bp vs 159 bp). Because a blastx
+    alignment cannot be longer than read_length/3 amino acids, a 150 bp read tops out
+    at 50 aa while a 159 bp read reaches 53 aa. With a minimum-alignment-length filter
+    anywhere near that ceiling, the shorter batch is systematically censored and looks
+    depleted for reasons that have nothing to do with biology. Trimming every read to a
+    common length gives all samples the same alignment-length ceiling.
+    """
+    ensure_dir(Path(out_fastq).parent)
+    reads = 0
+    with SEARCH.open_text(in_fastq) as fin, open(out_fastq, "w", encoding="utf-8") as fout:
+        while reads < max_reads:
+            header = fin.readline()
+            if not header:
+                break
+            seq = fin.readline()
+            plus = fin.readline()
+            qual = fin.readline()
+            if not qual:
+                break
+            if trim_to:
+                seq = seq.rstrip("\n")[:trim_to] + "\n"
+                qual = qual.rstrip("\n")[:trim_to] + "\n"
+            fout.write(header)
+            fout.write(seq)
+            fout.write(plus)
+            fout.write(qual)
+            reads += 1
+    return reads
+
+
+def search_params(args):
+    """Parameters that change the result; a cached sample is reused only if they match."""
+    return {
+        "depth_read_pairs": args.depth,
+        "trim_to": args.trim_to,
+        "min_aln_len": args.min_aln_len,
+        "evalue": args.evalue,
+        "pident": args.pident,
+    }
+
+
 def build_diamond_db(diamond, fasta_db, commands_log):
     """Build the DIAMOND index once per batch (seconds for ~18k proteins).
 
@@ -82,26 +127,25 @@ def process_sample(run, args, diamond, db_prefix, family_map):
     out_path = out_dir / "enzyme_hits.tsv"
     meta_path = out_dir / "sample_meta.json"
 
+    wanted = search_params(args)
     if out_path.exists() and out_path.stat().st_size > 0:
-        # Only reuse a result that was produced at the SAME depth. Otherwise a
-        # leftover from a shallow smoke-test run would be silently kept in a
-        # full-depth batch, reintroducing exactly the unequal-depth artifact that
-        # equal-depth subsampling exists to remove.
-        previous_depth = None
+        # Reuse a cached result only if EVERY parameter that affects it matches.
+        # Checking just the output's existence (or only the depth) would silently keep
+        # a result produced under different settings, which is how a shallow smoke-test
+        # run or an older filter threshold can contaminate a batch.
+        previous = {}
         if meta_path.exists():
             try:
-                previous_depth = json.loads(meta_path.read_text(encoding="utf-8")).get(
-                    "depth_read_pairs"
-                )
+                previous = json.loads(meta_path.read_text(encoding="utf-8"))
             except (ValueError, OSError):
-                previous_depth = None
-        if previous_depth == args.depth:
-            print(f"[skip] {run} already searched at this depth ({count_hits(out_path):,} hits).")
+                previous = {}
+        if all(previous.get(k) == v for k, v in wanted.items()):
+            print(f"[skip] {run} already searched with these settings "
+                  f"({count_hits(out_path):,} hits).")
             return out_path
-        print(
-            f"[redo] {run} was searched at depth {previous_depth} "
-            f"(now {args.depth:,}); re-running."
-        )
+        differing = [k for k, v in wanted.items() if previous.get(k) != v]
+        print(f"[redo] {run} was searched with different settings "
+              f"({', '.join(differing)}); re-running.")
 
     fq1 = Path(args.data_dir) / f"{run}_1.fastq.gz"
     fq2 = Path(args.data_dir) / f"{run}_2.fastq.gz"
@@ -117,8 +161,10 @@ def process_sample(run, args, diamond, db_prefix, family_map):
     try:
         for label, fq in [("read1", fq1), ("read2", fq2)]:
             subset = tmp_dir / f"{label}_subset.fastq"
-            print(f"  [{run}] subsampling {label} to {args.depth:,} reads ...", flush=True)
-            SEARCH.prepare_fastq_subset(str(fq), str(subset), args.depth)
+            trim_note = f", trimmed to {args.trim_to} bp" if args.trim_to else ""
+            print(f"  [{run}] subsampling {label} to {args.depth:,} reads{trim_note} ...",
+                  flush=True)
+            prepare_subset(str(fq), str(subset), args.depth, args.trim_to)
 
             raw_out = tmp_dir / f"raw_{label}.tsv"
             filtered_out = tmp_dir / f"filtered_{label}.tsv"
@@ -145,12 +191,9 @@ def process_sample(run, args, diamond, db_prefix, family_map):
             json.dumps(
                 {
                     "run_accession": run,
-                    "depth_read_pairs": args.depth,
                     "reads_searched": args.depth * 2,
                     "hits": n_hits,
-                    "evalue": args.evalue,
-                    "pident": args.pident,
-                    "min_aln_len": args.min_aln_len,
+                    **search_params(args),
                 },
                 indent=2,
                 sort_keys=True,
@@ -176,9 +219,18 @@ def main():
         help="read pairs kept per sample (default 13M ~ the smallest library)",
     )
     parser.add_argument("--threads", type=int, default=4)
+    parser.add_argument(
+        "--trim-to", type=int, default=150,
+        help="hard-trim every read to this many bp so all sequencing batches share the "
+             "same alignment-length ceiling (0 disables trimming)",
+    )
     parser.add_argument("--evalue", type=float, default=1e-5)
     parser.add_argument("--pident", type=float, default=30.0)
-    parser.add_argument("--min-aln-len", type=int, default=50)
+    parser.add_argument(
+        "--min-aln-len", type=int, default=30,
+        help="minimum alignment length in amino acids; must stay well below "
+             "trim_to/3 or short-read batches get censored at the ceiling",
+    )
     parser.add_argument("--limit", type=int, default=0, help="only process the first N runs (testing)")
     parser.add_argument("--commands-log", default="outputs/comparative/logs/commands.log")
     args = parser.parse_args()
@@ -186,6 +238,18 @@ def main():
     runs = read_metadata(args.metadata)
     if args.limit:
         runs = runs[: args.limit]
+
+    # A blastx alignment cannot exceed read_length/3 amino acids. If the minimum
+    # alignment length sits at or near that ceiling, hits pile up at the boundary and
+    # samples with shorter reads look artificially depleted. Refuse to run in that regime.
+    if args.trim_to:
+        ceiling_aa = args.trim_to // 3
+        if args.min_aln_len > ceiling_aa * 0.8:
+            raise ValueError(
+                f"--min-aln-len {args.min_aln_len} is too close to the {ceiling_aa} aa "
+                f"ceiling implied by --trim-to {args.trim_to}. Alignments would be "
+                f"censored at the boundary. Use --min-aln-len <= {int(ceiling_aa * 0.8)}."
+            )
 
     diamond = SEARCH.find_diamond()
     if not diamond:
